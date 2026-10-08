@@ -1,0 +1,1389 @@
+{
+  "source": "Whitetail Syndicate Shopify Admin read-only catalog",
+  "snapshot": "2026-10-08",
+  "note": "Preview-only snapshot, not a live shopping catalog. Verify current availability and prices in Shopify before purchase.",
+  "collections": {
+    "the-buck-collection": {
+      "handle": "the-buck-collection",
+      "title": "The Buck Collection",
+      "cover": "https://cdn.shopify.com/s/files/1/0689/1087/4727/collections/buck_collection.png?v=1788599883",
+      "products": [
+        {
+          "id": "gid://shopify/Product/10230961504359",
+          "handle": "all-over-print-flat-brim-baseball-cap-with-box",
+          "title": "All-Over Print Flat-Brim Baseball Cap With Box",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/328214-ae7c9aa8-5479-4e67-8ce6-d7b17e3ce9f1.jpg?v=1790627571",
+          "alt": "ADS-3AMSYS19-PLYYV-FFFFFF",
+          "price": "30.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/all-over-print-flat-brim-baseball-cap-with-box"
+        },
+        {
+          "id": "gid://shopify/Product/10230930800743",
+          "handle": "all-over-print-mens-half-zip-sweatshirt-230gsm",
+          "title": "All-Over Print Men's Half-Zip Sweatshirt|230GSM",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/328214-63615907-69fb-4c73-8e7e-5eeee95ccf28.jpg?v=1790621781",
+          "alt": "ADS-3MTXSB42-PLYHT-FFFFFF",
+          "price": "49.99",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/all-over-print-mens-half-zip-sweatshirt-230gsm"
+        },
+        {
+          "id": "gid://shopify/Product/10230928179303",
+          "handle": "all-over-print-mens-sun-protection-hooded-sport-top",
+          "title": "All-Over Print Men's Sun Protection Hooded Sport Top",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/328214-41e224ec-711d-4c3e-9100-75cf1b5d7087.jpg?v=1790621439",
+          "alt": "ADS-3MTXUB79-PLYGZ-FFFFFF",
+          "price": "49.99",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/all-over-print-mens-sun-protection-hooded-sport-top"
+        },
+        {
+          "id": "gid://shopify/Product/10230926475367",
+          "handle": "mens-classic-clogs-with-fleece",
+          "title": "Men's Classic Clogs with Fleece",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/328214-18869fd2-d3f5-448d-bd89-a9fa50819a72.jpg?v=1790621172",
+          "alt": "ADS-3SMSDD05-PLYGC-000000",
+          "price": "53.46",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/mens-classic-clogs-with-fleece"
+        },
+        {
+          "id": "gid://shopify/Product/10230924181607",
+          "handle": "all-over-print-knitted-hat",
+          "title": "All-Over Print Knitted Hat",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/328214-0399ec61-22e5-4cd5-8c37-257a3109091b.jpg?v=1790620765",
+          "alt": "ADS-3AMSZZ21-PLYF9-FFFFFF",
+          "price": "26.08",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/all-over-print-knitted-hat"
+        },
+        {
+          "id": "gid://shopify/Product/10230923001959",
+          "handle": "all-over-print-balaclava-face-mask",
+          "title": "All-Over Print Balaclava Face Mask",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/328214-2282bf86-0eb4-4b8f-a76d-02442251b113.jpg?v=1790620558",
+          "alt": "ADS-TYTTA-PLYED-FFFFFF",
+          "price": "22.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/all-over-print-balaclava-face-mask"
+        },
+        {
+          "id": "gid://shopify/Product/10230914547815",
+          "handle": "all-over-print-peaked-cap-with-box",
+          "title": "All-Over Print Peaked Cap With Box",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/328214-c649a867-32de-4207-83b2-bb495be4f04c.jpg?v=1790619383",
+          "alt": "ADS-3AMSYS22-PLYBH-FFFFFF",
+          "price": "34.30",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/all-over-print-peaked-cap-with-box"
+        },
+        {
+          "id": "gid://shopify/Product/10230913269863",
+          "handle": "all-over-print-multifunctional-backpack",
+          "title": "All-Over Print Multifunctional Backpack",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/328214-cbd0f339-2abf-44b7-849e-4cde9730b72a.jpg?v=1790619258",
+          "alt": "ADS-2ABBYD81-PLYB7-FFFFFF",
+          "price": "99.40",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/all-over-print-multifunctional-backpack"
+        },
+        {
+          "id": "gid://shopify/Product/10230913106023",
+          "handle": "all-over-print-neck-gaiter",
+          "title": "All-Over Print Neck Gaiter",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/328214-440fedce-00f4-4ea5-a565-d735e596820d.jpg?v=1790619222",
+          "alt": "ADS-3NG-PLYB2-FFFFFF",
+          "price": "17.88",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/all-over-print-neck-gaiter"
+        },
+        {
+          "id": "gid://shopify/Product/10230904782951",
+          "handle": "unisex-trucker-hat-with-black-half-mesh",
+          "title": "Unisex Trucker Hat With Black Half-mesh",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/328214-080a4fff-5227-4786-b633-70386b061168.jpg?v=1790618092",
+          "alt": "ADS-CPMY-PLY7V-FFFFFF",
+          "price": "24.24",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/unisex-trucker-hat-with-black-half-mesh"
+        },
+        {
+          "id": "gid://shopify/Product/10230900621415",
+          "handle": "all-over-print-mens-half-zip-pullover",
+          "title": "All-Over Print Men's Half Zip Pullover",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/328214-b59df712-8054-4c54-a432-c82767ebd34e.jpg?v=1790617111",
+          "alt": "ADS-3MHZDM41-PLY5H-FFFFFF",
+          "price": "46.10",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/all-over-print-mens-half-zip-pullover"
+        },
+        {
+          "id": "gid://shopify/Product/10230899572839",
+          "handle": "all-over-print-unisex-set-2",
+          "title": "All-Over Print Unisex Set",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/328214-401c93ca-4125-4486-bd88-3fade76bfabb_6f6b371c-7aed-48a8-a70f-1b946ceb073e.jpg?v=1790616908",
+          "alt": "ADS-3MSCZX08-PLY4H-FFFFFF",
+          "price": "61.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/all-over-print-unisex-set-2"
+        },
+        {
+          "id": "gid://shopify/Product/10230828335207",
+          "handle": "sports-warmup-hoodie",
+          "title": "Sports warmup hoodie",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/all-over-print-mens-sports-warmup-hoodie-front-6aba83a7a742b.jpg?v=1790608323",
+          "alt": "Product mockup",
+          "price": "59.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/sports-warmup-hoodie"
+        },
+        {
+          "id": "gid://shopify/Product/10227364200551",
+          "handle": "unisex-sweatshirt",
+          "title": "Unisex Sweatshirt",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/all-over-print-recycled-unisex-sweatshirt-white-front-6ab9e8661e233.jpg?v=1790568594",
+          "alt": "Product mockup",
+          "price": "44.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/unisex-sweatshirt"
+        },
+        {
+          "id": "gid://shopify/Product/10227358433383",
+          "handle": "mens-rash-guard",
+          "title": "Men's Rash Guard",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/all-over-print-mens-rash-guard-white-front-6ab9e63d97be8.jpg?v=1790568030",
+          "alt": "Product mockup",
+          "price": "42.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/mens-rash-guard"
+        },
+        {
+          "id": "gid://shopify/Product/10227356467303",
+          "handle": "oversized-cotton-t-shirt",
+          "title": "Oversized cotton t-shirt",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/all-over-print-oversized-cotton-t-shirt-white-front-6ab9e5764a041.jpg?v=1790567822",
+          "alt": "Product mockup",
+          "price": "49.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/oversized-cotton-t-shirt"
+        },
+        {
+          "id": "gid://shopify/Product/10227351289959",
+          "handle": "unisex-zip-hoodie",
+          "title": "Unisex zip hoodie",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/all-over-print-recycled-unisex-zip-hoodie-white-front-6ab9e45fe599d.jpg?v=1790567573",
+          "alt": "Product mockup",
+          "price": "60.50",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/unisex-zip-hoodie"
+        },
+        {
+          "id": "gid://shopify/Product/10227348111463",
+          "handle": "men-s-windbreaker-1",
+          "title": "Men’s windbreaker",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/all-over-print-mens-windbreaker-black-front-6ab9e3da4c566.jpg?v=1790567415",
+          "alt": "Product mockup",
+          "price": "59.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/men-s-windbreaker-1"
+        },
+        {
+          "id": "gid://shopify/Product/10227346047079",
+          "handle": "men-s-windbreaker",
+          "title": "Men’s windbreaker",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/all-over-print-mens-windbreaker-black-front-6ab9e32381786.jpg?v=1790567250",
+          "alt": "Product mockup",
+          "price": "59.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/men-s-windbreaker"
+        },
+        {
+          "id": "gid://shopify/Product/10227341852775",
+          "handle": "duffle-bag",
+          "title": "Duffle bag",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/all-over-print-duffle-bag-white-back-6ab9e18e2f19b.jpg?v=1790566849",
+          "alt": "Product mockup",
+          "price": "90.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/duffle-bag"
+        },
+        {
+          "id": "gid://shopify/Product/10227339591783",
+          "handle": "all-over-print-beanie-1",
+          "title": "All-Over Print Beanie",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/all-over-print-beanie-white-front-6ab9e00d251b3.jpg?v=1790566441",
+          "alt": "Product mockup",
+          "price": "29.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/all-over-print-beanie-1"
+        },
+        {
+          "id": "gid://shopify/Product/10227333628007",
+          "handle": "all-over-print-beanie",
+          "title": "All-Over Print Beanie",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/all-over-print-beanie-white-front-6ab9de9072213.jpg?v=1790566060",
+          "alt": "Product mockup",
+          "price": "30.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/all-over-print-beanie"
+        },
+        {
+          "id": "gid://shopify/Product/10227309084775",
+          "handle": "unisex-cotton-hoodie",
+          "title": "Unisex cotton hoodie",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/all-over-print-unisex-cotton-hoodie-white-back-6ab9d95b88753.jpg?v=1790564740",
+          "alt": "Product mockup",
+          "price": "68.50",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/unisex-cotton-hoodie"
+        },
+        {
+          "id": "gid://shopify/Product/10227307774055",
+          "handle": "unisex-cotton-sweatshirt",
+          "title": "Unisex cotton sweatshirt",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/all-over-print-unisex-cotton-sweatshirt-white-back-6ab9d910efd17.jpg?v=1790564662",
+          "alt": "Product mockup",
+          "price": "57.50",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/unisex-cotton-sweatshirt"
+        },
+        {
+          "id": "gid://shopify/Product/10227305087079",
+          "handle": "oversized-cotton-sweatshirt",
+          "title": "Oversized cotton sweatshirt",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/all-over-print-oversized-cotton-sweatshirt-white-back-6ab9d8bae93c5.jpg?v=1790564579",
+          "alt": "Product mockup",
+          "price": "55.50",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/oversized-cotton-sweatshirt"
+        },
+        {
+          "id": "gid://shopify/Product/10227304857703",
+          "handle": "oversized-cotton-hoodie-1",
+          "title": "Oversized Cotton Hoodie",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/all-over-print-oversized-cotton-hoodie-white-back-6ab9d84823041.jpg?v=1790564464",
+          "alt": "Product mockup",
+          "price": "69.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/oversized-cotton-hoodie-1"
+        },
+        {
+          "id": "gid://shopify/Product/10227283853415",
+          "handle": "oversized-cotton-hoodie",
+          "title": "RUT CAMO HOODIE",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/all-over-print-oversized-cotton-hoodie-white-back-6ab9d7a601e9c.jpg?v=1790564276",
+          "alt": "Product mockup",
+          "price": "69.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/oversized-cotton-hoodie"
+        },
+        {
+          "id": "gid://shopify/Product/10227135938663",
+          "handle": "value-fleece-vest-2",
+          "title": "Value Fleece Vest",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/6140916_6498.jpg?v=1790540029",
+          "alt": "Value Fleece Vest",
+          "price": "48.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/value-fleece-vest-2"
+        },
+        {
+          "id": "gid://shopify/Product/10227135742055",
+          "handle": "value-fleece-vest-1",
+          "title": "Value Fleece Vest",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/6140904_6498.jpg?v=1790539828",
+          "alt": "Value Fleece Vest",
+          "price": "48.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/value-fleece-vest-1"
+        },
+        {
+          "id": "gid://shopify/Product/10227043663975",
+          "handle": "value-fleece-vest",
+          "title": "Value Fleece Vest",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/6140199_6498.jpg?v=1790524443",
+          "alt": "Value Fleece Vest",
+          "price": "48.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/value-fleece-vest"
+        },
+        {
+          "id": "gid://shopify/Product/10227023675495",
+          "handle": "unisex-midweight-hoodie",
+          "title": "Unisex midweight hoodie",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/unisex-midweight-hoodie-black-front-6ab9340b28660.jpg?v=1790522393",
+          "alt": "Product mockup",
+          "price": "49.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/unisex-midweight-hoodie"
+        },
+        {
+          "id": "gid://shopify/Product/10225893277799",
+          "handle": "skull-cap-3",
+          "title": "skull cap",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/6137301_4394.jpg?v=1790433579",
+          "alt": "skull cap",
+          "price": "29.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/skull-cap-3"
+        },
+        {
+          "id": "gid://shopify/Product/10225891410023",
+          "handle": "skull-cap-1",
+          "title": "skull cap",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/6137266_4394.jpg?v=1790433295",
+          "alt": "skull cap",
+          "price": "29.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/skull-cap-1"
+        },
+        {
+          "id": "gid://shopify/Product/10225889476711",
+          "handle": "skull-cap",
+          "title": "skull cap",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/6137255_4394.jpg?v=1790433234",
+          "alt": "skull cap",
+          "price": "29.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/skull-cap"
+        },
+        {
+          "id": "gid://shopify/Product/10225750540391",
+          "handle": "hooded-long-sleeve-tee",
+          "title": "Hooded long-sleeve tee",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/unisex-hooded-long-sleeve-tee-charcoal-black-triblend-front-6ab7b27a96c23.jpg?v=1790423697",
+          "alt": "Product mockup",
+          "price": "39.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/hooded-long-sleeve-tee"
+        },
+        {
+          "id": "gid://shopify/Product/10225743921255",
+          "handle": "camouflage-trucker-hat-2",
+          "title": "Camouflage trucker hat",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/camouflage-trucker-hat-camo-brown-front-6ab7b00a4bfb1.jpg?v=1790423063",
+          "alt": "Product mockup",
+          "price": "30.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/camouflage-trucker-hat-2"
+        },
+        {
+          "id": "gid://shopify/Product/10225743790183",
+          "handle": "camouflage-trucker-hat-1",
+          "title": "Camouflage trucker hat",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/camouflage-trucker-hat-camo-olive-front-6ac56d982ec66.jpg?v=1791323556",
+          "alt": "Product mockup",
+          "price": "30.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/camouflage-trucker-hat-1"
+        },
+        {
+          "id": "gid://shopify/Product/10224608215143",
+          "handle": "posi-uv-pro-hoodie-1",
+          "title": "Posi UV Pro Hoodie",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/6135947_6843.jpg?v=1790371887",
+          "alt": "Posi UV Pro Hoodie",
+          "price": "68.34",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/posi-uv-pro-hoodie-1"
+        },
+        {
+          "id": "gid://shopify/Product/10224563257447",
+          "handle": "posi-uv-pro-hoodie",
+          "title": "Posi UV Pro Hoodie",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/6135799_6843.jpg?v=1790367755",
+          "alt": "Posi UV Pro Hoodie",
+          "price": "68.34",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/posi-uv-pro-hoodie"
+        },
+        {
+          "id": "gid://shopify/Product/10224417833063",
+          "handle": "avenue-pullover-hooded-sweatshirt-1",
+          "title": "Avenue Pullover Hooded Sweatshirt",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/6135174_7386.jpg?v=1790351526",
+          "alt": "Avenue Pullover Hooded Sweatshirt",
+          "price": "63.06",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/avenue-pullover-hooded-sweatshirt-1"
+        },
+        {
+          "id": "gid://shopify/Product/10224417538151",
+          "handle": "avenue-pullover-hooded-sweatshirt",
+          "title": "Avenue Pullover Hooded Sweatshirt",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/6135170_7386.jpg?v=1790351462",
+          "alt": "Avenue Pullover Hooded Sweatshirt",
+          "price": "65.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/avenue-pullover-hooded-sweatshirt"
+        },
+        {
+          "id": "gid://shopify/Product/10223466283111",
+          "handle": "whitetail-syndicate-a4-cooling-tee",
+          "title": "Whitetail Syndicate A4 Cooling Tee",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/6133169_7543_590_900.jpg?v=1790293573",
+          "alt": "Whitetail Syndicate A4 Cooling Tee",
+          "price": "35.99",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/whitetail-syndicate-a4-cooling-tee"
+        },
+        {
+          "id": "gid://shopify/Product/10223466020967",
+          "handle": "whitetail-syndicate-cooling-ls-tee",
+          "title": "Whitetail Syndicate Cooling LS Tee",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/6132958_7530_590_900.jpg?v=1790293422",
+          "alt": "Whitetail Syndicate Cooling LS Tee",
+          "price": "39.99",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/whitetail-syndicate-cooling-ls-tee"
+        },
+        {
+          "id": "gid://shopify/Product/7798057468007",
+          "handle": "gildan-pullover-hoody",
+          "title": "gildan pullover hoody",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/6082463_4473.jpg?v=1789196789",
+          "alt": "gildan pullover hoody",
+          "price": "36.78",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/gildan-pullover-hoody"
+        }
+      ]
+    },
+    "the-doe-collection": {
+      "handle": "the-doe-collection",
+      "title": "The Doe Collection",
+      "cover": "https://cdn.shopify.com/s/files/1/0689/1087/4727/collections/doe_collection.png?v=1788600017",
+      "products": [
+        {
+          "id": "gid://shopify/Product/10231153229927",
+          "handle": "womens-lightweight-wash-hooded-sweatshirt-2",
+          "title": "Womens Lightweight Wash Hooded Sweatshirt",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/6145364_4608.jpg?v=1790652014",
+          "alt": "Womens Lightweight Wash Hooded Sweatshirt",
+          "price": "52.86",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/womens-lightweight-wash-hooded-sweatshirt-2"
+        },
+        {
+          "id": "gid://shopify/Product/10231139434599",
+          "handle": "womens-lightweight-wash-hooded-sweatshirt-1",
+          "title": "Womens Lightweight Wash Hooded Sweatshirt",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/6145341_4608.jpg?v=1790651435",
+          "alt": "Womens Lightweight Wash Hooded Sweatshirt",
+          "price": "52.86",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/womens-lightweight-wash-hooded-sweatshirt-1"
+        },
+        {
+          "id": "gid://shopify/Product/10231134552167",
+          "handle": "womens-lightweight-wash-hooded-sweatshirt",
+          "title": "Womens Lightweight Wash Hooded Sweatshirt",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/6145308_4608.jpg?v=1790650940",
+          "alt": "Womens Lightweight Wash Hooded Sweatshirt",
+          "price": "52.86",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/womens-lightweight-wash-hooded-sweatshirt"
+        },
+        {
+          "id": "gid://shopify/Product/10230828335207",
+          "handle": "sports-warmup-hoodie",
+          "title": "Sports warmup hoodie",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/all-over-print-mens-sports-warmup-hoodie-front-6aba83a7a742b.jpg?v=1790608323",
+          "alt": "Product mockup",
+          "price": "59.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/sports-warmup-hoodie"
+        },
+        {
+          "id": "gid://shopify/Product/10227364200551",
+          "handle": "unisex-sweatshirt",
+          "title": "Unisex Sweatshirt",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/all-over-print-recycled-unisex-sweatshirt-white-front-6ab9e8661e233.jpg?v=1790568594",
+          "alt": "Product mockup",
+          "price": "44.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/unisex-sweatshirt"
+        },
+        {
+          "id": "gid://shopify/Product/10227358433383",
+          "handle": "mens-rash-guard",
+          "title": "Men's Rash Guard",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/all-over-print-mens-rash-guard-white-front-6ab9e63d97be8.jpg?v=1790568030",
+          "alt": "Product mockup",
+          "price": "42.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/mens-rash-guard"
+        },
+        {
+          "id": "gid://shopify/Product/10227356467303",
+          "handle": "oversized-cotton-t-shirt",
+          "title": "Oversized cotton t-shirt",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/all-over-print-oversized-cotton-t-shirt-white-front-6ab9e5764a041.jpg?v=1790567822",
+          "alt": "Product mockup",
+          "price": "49.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/oversized-cotton-t-shirt"
+        },
+        {
+          "id": "gid://shopify/Product/10227351289959",
+          "handle": "unisex-zip-hoodie",
+          "title": "Unisex zip hoodie",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/all-over-print-recycled-unisex-zip-hoodie-white-front-6ab9e45fe599d.jpg?v=1790567573",
+          "alt": "Product mockup",
+          "price": "60.50",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/unisex-zip-hoodie"
+        },
+        {
+          "id": "gid://shopify/Product/10227348111463",
+          "handle": "men-s-windbreaker-1",
+          "title": "Men’s windbreaker",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/all-over-print-mens-windbreaker-black-front-6ab9e3da4c566.jpg?v=1790567415",
+          "alt": "Product mockup",
+          "price": "59.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/men-s-windbreaker-1"
+        },
+        {
+          "id": "gid://shopify/Product/10227346047079",
+          "handle": "men-s-windbreaker",
+          "title": "Men’s windbreaker",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/all-over-print-mens-windbreaker-black-front-6ab9e32381786.jpg?v=1790567250",
+          "alt": "Product mockup",
+          "price": "59.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/men-s-windbreaker"
+        },
+        {
+          "id": "gid://shopify/Product/10227341852775",
+          "handle": "duffle-bag",
+          "title": "Duffle bag",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/all-over-print-duffle-bag-white-back-6ab9e18e2f19b.jpg?v=1790566849",
+          "alt": "Product mockup",
+          "price": "90.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/duffle-bag"
+        },
+        {
+          "id": "gid://shopify/Product/10227339591783",
+          "handle": "all-over-print-beanie-1",
+          "title": "All-Over Print Beanie",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/all-over-print-beanie-white-front-6ab9e00d251b3.jpg?v=1790566441",
+          "alt": "Product mockup",
+          "price": "29.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/all-over-print-beanie-1"
+        },
+        {
+          "id": "gid://shopify/Product/10227333628007",
+          "handle": "all-over-print-beanie",
+          "title": "All-Over Print Beanie",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/all-over-print-beanie-white-front-6ab9de9072213.jpg?v=1790566060",
+          "alt": "Product mockup",
+          "price": "30.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/all-over-print-beanie"
+        },
+        {
+          "id": "gid://shopify/Product/10227309084775",
+          "handle": "unisex-cotton-hoodie",
+          "title": "Unisex cotton hoodie",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/all-over-print-unisex-cotton-hoodie-white-back-6ab9d95b88753.jpg?v=1790564740",
+          "alt": "Product mockup",
+          "price": "68.50",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/unisex-cotton-hoodie"
+        },
+        {
+          "id": "gid://shopify/Product/10227307774055",
+          "handle": "unisex-cotton-sweatshirt",
+          "title": "Unisex cotton sweatshirt",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/all-over-print-unisex-cotton-sweatshirt-white-back-6ab9d910efd17.jpg?v=1790564662",
+          "alt": "Product mockup",
+          "price": "57.50",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/unisex-cotton-sweatshirt"
+        },
+        {
+          "id": "gid://shopify/Product/10227305087079",
+          "handle": "oversized-cotton-sweatshirt",
+          "title": "Oversized cotton sweatshirt",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/all-over-print-oversized-cotton-sweatshirt-white-back-6ab9d8bae93c5.jpg?v=1790564579",
+          "alt": "Product mockup",
+          "price": "55.50",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/oversized-cotton-sweatshirt"
+        },
+        {
+          "id": "gid://shopify/Product/10227304857703",
+          "handle": "oversized-cotton-hoodie-1",
+          "title": "Oversized Cotton Hoodie",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/all-over-print-oversized-cotton-hoodie-white-back-6ab9d84823041.jpg?v=1790564464",
+          "alt": "Product mockup",
+          "price": "69.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/oversized-cotton-hoodie-1"
+        },
+        {
+          "id": "gid://shopify/Product/10227283853415",
+          "handle": "oversized-cotton-hoodie",
+          "title": "RUT CAMO HOODIE",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/all-over-print-oversized-cotton-hoodie-white-back-6ab9d7a601e9c.jpg?v=1790564276",
+          "alt": "Product mockup",
+          "price": "69.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/oversized-cotton-hoodie"
+        },
+        {
+          "id": "gid://shopify/Product/10225892589671",
+          "handle": "skull-cap-2",
+          "title": "skull cap",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/6137284_4394.jpg?v=1790433471",
+          "alt": "skull cap",
+          "price": "26.96",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/skull-cap-2"
+        },
+        {
+          "id": "gid://shopify/Product/10225876140135",
+          "handle": "vintage-cotton-twill-cap-2",
+          "title": "Vintage Cotton Twill Cap",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/vintage-cap-black-front-6ab7d3cc062f2.jpg?v=1790432211",
+          "alt": "Product mockup",
+          "price": "27.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/vintage-cotton-twill-cap-2"
+        },
+        {
+          "id": "gid://shopify/Product/10225871388775",
+          "handle": "vintage-cotton-twill-cap-1",
+          "title": "Vintage Cotton Twill Cap",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/vintage-cap-black-front-6ab7d3031a09b.jpg?v=1790432010",
+          "alt": "Product mockup",
+          "price": "27.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/vintage-cotton-twill-cap-1"
+        },
+        {
+          "id": "gid://shopify/Product/10225865064551",
+          "handle": "lightweight-crop-hoodie-3",
+          "title": "Lightweight Crop Hoodie",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/6137189_4770.jpg?v=1790431562",
+          "alt": "Lightweight Crop Hoodie",
+          "price": "49.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/lightweight-crop-hoodie-3"
+        },
+        {
+          "id": "gid://shopify/Product/10225864966247",
+          "handle": "lightweight-crop-hoodie-2",
+          "title": "Lightweight Crop Hoodie",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/6137184_4770.jpg?v=1790431525",
+          "alt": "Lightweight Crop Hoodie",
+          "price": "49.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/lightweight-crop-hoodie-2"
+        },
+        {
+          "id": "gid://shopify/Product/10225864933479",
+          "handle": "lightweight-crop-hoodie-1",
+          "title": "Lightweight Crop Hoodie",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/6137182_4770.jpg?v=1790431461",
+          "alt": "Lightweight Crop Hoodie",
+          "price": "49.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/lightweight-crop-hoodie-1"
+        },
+        {
+          "id": "gid://shopify/Product/10225864605799",
+          "handle": "lightweight-crop-hoodie",
+          "title": "Lightweight Crop Hoodie",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/6137179_4770.jpg?v=1790431422",
+          "alt": "Lightweight Crop Hoodie",
+          "price": "49.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/lightweight-crop-hoodie"
+        },
+        {
+          "id": "gid://shopify/Product/10225838227559",
+          "handle": "women-s-garment-dye-cropped-tee-1",
+          "title": "Women’s garment dye cropped tee",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/womens-garment-dye-cropped-tee-washed-black-front-6ab7cb0f4e462.jpg?v=1790429975",
+          "alt": "Product mockup",
+          "price": "30.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/women-s-garment-dye-cropped-tee-1"
+        },
+        {
+          "id": "gid://shopify/Product/10225834786919",
+          "handle": "women-s-garment-dye-cropped-tee",
+          "title": "Women’s garment dye cropped tee",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/womens-garment-dye-cropped-tee-washed-black-front-6ab7caa561967.jpg?v=1790429870",
+          "alt": "Product mockup",
+          "price": "29.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/women-s-garment-dye-cropped-tee"
+        },
+        {
+          "id": "gid://shopify/Product/10225819746407",
+          "handle": "women-s-relaxed-v-neck-t-shirt-1",
+          "title": "Women’s relaxed v-neck t-shirt",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/womens-relaxed-v-neck-t-shirt-solid-black-blend-front-6ab7c892382a9.jpg?v=1790429380",
+          "alt": "Product mockup",
+          "price": "29.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/women-s-relaxed-v-neck-t-shirt-1"
+        },
+        {
+          "id": "gid://shopify/Product/10225807753319",
+          "handle": "womens-micro-rib-racer-tank-top-1",
+          "title": "Women's micro rib racer tank top",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/womens-micro-rib-racer-tank-top-solid-black-blend-front-6ab7c1d9eb3a4.jpg?v=1790427620",
+          "alt": "Product mockup",
+          "price": "35.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/womens-micro-rib-racer-tank-top-1"
+        },
+        {
+          "id": "gid://shopify/Product/10225799888999",
+          "handle": "women-s-relaxed-v-neck-t-shirt",
+          "title": "Women’s relaxed v-neck t-shirt",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/womens-relaxed-v-neck-t-shirt-solid-black-blend-front-6ab7c0885a6af.jpg?v=1790427298",
+          "alt": "Product mockup",
+          "price": "29.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/women-s-relaxed-v-neck-t-shirt"
+        },
+        {
+          "id": "gid://shopify/Product/10225774788711",
+          "handle": "womens-micro-rib-racer-tank-top",
+          "title": "Women's micro rib racer tank top",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/womens-micro-rib-racer-tank-top-solid-black-blend-front-6ab7be727e65f.jpg?v=1790426752",
+          "alt": "Product mockup",
+          "price": "35.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/womens-micro-rib-racer-tank-top"
+        },
+        {
+          "id": "gid://shopify/Product/10223609217127",
+          "handle": "whitetail-syndicate-women-39-s-ideal-crew",
+          "title": "Whitetail Syndicate Women 39 s Ideal Crew",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/6133562_6228_590_900.jpg?v=1790303287",
+          "alt": "Whitetail Syndicate Women 39 s Ideal Crew",
+          "price": "32.99",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/whitetail-syndicate-women-39-s-ideal-crew"
+        },
+        {
+          "id": "gid://shopify/Product/10223608594535",
+          "handle": "whitetail-syndicate-womens-ideal-crew",
+          "title": "Whitetail Syndicate Women's Ideal Crew",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/6133576_6228.jpg?v=1790302925",
+          "alt": "Whitetail Syndicate Women's Ideal Crew",
+          "price": "32.99",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/whitetail-syndicate-womens-ideal-crew"
+        }
+      ]
+    },
+    "the-yearling-collection": {
+      "handle": "the-yearling-collection",
+      "title": "The Yearling Collection",
+      "cover": "https://cdn.shopify.com/s/files/1/0689/1087/4727/collections/yearling_collection.png?v=1788600128",
+      "products": [
+        {
+          "id": "gid://shopify/Product/10227341852775",
+          "handle": "duffle-bag",
+          "title": "Duffle bag",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/all-over-print-duffle-bag-white-back-6ab9e18e2f19b.jpg?v=1790566849",
+          "alt": "Product mockup",
+          "price": "90.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/duffle-bag"
+        },
+        {
+          "id": "gid://shopify/Product/10227339591783",
+          "handle": "all-over-print-beanie-1",
+          "title": "All-Over Print Beanie",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/all-over-print-beanie-white-front-6ab9e00d251b3.jpg?v=1790566441",
+          "alt": "Product mockup",
+          "price": "29.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/all-over-print-beanie-1"
+        },
+        {
+          "id": "gid://shopify/Product/10227333628007",
+          "handle": "all-over-print-beanie",
+          "title": "All-Over Print Beanie",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/all-over-print-beanie-white-front-6ab9de9072213.jpg?v=1790566060",
+          "alt": "Product mockup",
+          "price": "30.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/all-over-print-beanie"
+        },
+        {
+          "id": "gid://shopify/Product/10227140132967",
+          "handle": "toddler-fleece-pullover-hoodie",
+          "title": "Toddler fleece pullover hoodie",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/toddler-pullover-fleece-hoodie-black-front-6ab9818b63696.jpg?v=1790542226",
+          "alt": "Product mockup",
+          "price": "34.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/toddler-fleece-pullover-hoodie"
+        },
+        {
+          "id": "gid://shopify/Product/10227139215463",
+          "handle": "kids-crew-neck-sweatshirt-1",
+          "title": "Kids crew neck sweatshirt",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/kids-crew-neck-sweatshirt-red-front-6ab980653239c.jpg?v=1790541940",
+          "alt": "Product mockup",
+          "price": "30.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/kids-crew-neck-sweatshirt-1"
+        },
+        {
+          "id": "gid://shopify/Product/10227138265191",
+          "handle": "kids-crew-neck-sweatshirt",
+          "title": "Kids crew neck sweatshirt",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/kids-crew-neck-sweatshirt-black-front-6ab97f10b5925.jpg?v=1790541591",
+          "alt": "Product mockup",
+          "price": "26.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/kids-crew-neck-sweatshirt"
+        },
+        {
+          "id": "gid://shopify/Product/10227138199655",
+          "handle": "baby-short-sleeve-one-piece-2",
+          "title": "Baby short sleeve one piece",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/baby-short-sleeve-one-piece-pink-front-6ab97e8e3d8f4.jpg?v=1790541460",
+          "alt": "Product mockup",
+          "price": "30.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/baby-short-sleeve-one-piece-2"
+        },
+        {
+          "id": "gid://shopify/Product/10227138068583",
+          "handle": "baby-short-sleeve-one-piece-1",
+          "title": "Baby short sleeve one piece",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/baby-short-sleeve-one-piece-black-front-6ab97dfc878e6.jpg?v=1790541322",
+          "alt": "Product mockup",
+          "price": "30.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/baby-short-sleeve-one-piece-1"
+        },
+        {
+          "id": "gid://shopify/Product/10227137904743",
+          "handle": "baby-short-sleeve-one-piece",
+          "title": "Baby short sleeve one piece",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/baby-short-sleeve-one-piece-yellow-front-6ab97d3164ab9.jpg?v=1790541112",
+          "alt": "Product mockup",
+          "price": "32.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/baby-short-sleeve-one-piece"
+        },
+        {
+          "id": "gid://shopify/Product/10223524544615",
+          "handle": "whitetail-syndicate-youth-performance-tee",
+          "title": "Whitetail Syndicate Youth Performance Tee",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/6133207_5860.jpg?v=1790294701",
+          "alt": "Whitetail Syndicate Youth Performance Tee",
+          "price": "32.99",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/whitetail-syndicate-youth-performance-tee"
+        }
+      ]
+    },
+    "the-fawn-collection": {
+      "handle": "the-fawn-collection",
+      "title": "The Fawn Collection",
+      "cover": "https://cdn.shopify.com/s/files/1/0689/1087/4727/collections/fawn_collection.png?v=1788600518",
+      "products": [
+        {
+          "id": "gid://shopify/Product/10227341852775",
+          "handle": "duffle-bag",
+          "title": "Duffle bag",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/all-over-print-duffle-bag-white-back-6ab9e18e2f19b.jpg?v=1790566849",
+          "alt": "Product mockup",
+          "price": "90.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/duffle-bag"
+        },
+        {
+          "id": "gid://shopify/Product/10227140132967",
+          "handle": "toddler-fleece-pullover-hoodie",
+          "title": "Toddler fleece pullover hoodie",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/toddler-pullover-fleece-hoodie-black-front-6ab9818b63696.jpg?v=1790542226",
+          "alt": "Product mockup",
+          "price": "34.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/toddler-fleece-pullover-hoodie"
+        },
+        {
+          "id": "gid://shopify/Product/10227139215463",
+          "handle": "kids-crew-neck-sweatshirt-1",
+          "title": "Kids crew neck sweatshirt",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/kids-crew-neck-sweatshirt-red-front-6ab980653239c.jpg?v=1790541940",
+          "alt": "Product mockup",
+          "price": "30.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/kids-crew-neck-sweatshirt-1"
+        },
+        {
+          "id": "gid://shopify/Product/10227138265191",
+          "handle": "kids-crew-neck-sweatshirt",
+          "title": "Kids crew neck sweatshirt",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/kids-crew-neck-sweatshirt-black-front-6ab97f10b5925.jpg?v=1790541591",
+          "alt": "Product mockup",
+          "price": "26.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/kids-crew-neck-sweatshirt"
+        },
+        {
+          "id": "gid://shopify/Product/10227138199655",
+          "handle": "baby-short-sleeve-one-piece-2",
+          "title": "Baby short sleeve one piece",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/baby-short-sleeve-one-piece-pink-front-6ab97e8e3d8f4.jpg?v=1790541460",
+          "alt": "Product mockup",
+          "price": "30.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/baby-short-sleeve-one-piece-2"
+        },
+        {
+          "id": "gid://shopify/Product/10227138068583",
+          "handle": "baby-short-sleeve-one-piece-1",
+          "title": "Baby short sleeve one piece",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/baby-short-sleeve-one-piece-black-front-6ab97dfc878e6.jpg?v=1790541322",
+          "alt": "Product mockup",
+          "price": "30.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/baby-short-sleeve-one-piece-1"
+        },
+        {
+          "id": "gid://shopify/Product/10227137904743",
+          "handle": "baby-short-sleeve-one-piece",
+          "title": "Baby short sleeve one piece",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/baby-short-sleeve-one-piece-yellow-front-6ab97d3164ab9.jpg?v=1790541112",
+          "alt": "Product mockup",
+          "price": "32.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/baby-short-sleeve-one-piece"
+        }
+      ]
+    },
+    "hats-beanies": {
+      "handle": "hats-beanies",
+      "title": "Hats & Beanies",
+      "cover": "https://cdn.shopify.com/s/files/1/0689/1087/4727/collections/hats_and_benies_collection.png?v=1788600705",
+      "products": [
+        {
+          "id": "gid://shopify/Product/10233523535975",
+          "handle": "structured-twill-cap",
+          "title": "Structured Twill Cap",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/closed-back-structured-cap-multicam-black-front-6abd1d3e5916a.jpg?v=1790778706",
+          "alt": "Product mockup",
+          "price": "30.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/structured-twill-cap"
+        },
+        {
+          "id": "gid://shopify/Product/10233514819687",
+          "handle": "closed-back-trucker-cap",
+          "title": "Closed-back trucker cap",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/closed-back-trucker-cap-black-front-6ac1ae0a20d62.jpg?v=1791077907",
+          "alt": "Product mockup",
+          "price": "18.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/closed-back-trucker-cap"
+        },
+        {
+          "id": "gid://shopify/Product/10230961504359",
+          "handle": "all-over-print-flat-brim-baseball-cap-with-box",
+          "title": "All-Over Print Flat-Brim Baseball Cap With Box",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/328214-ae7c9aa8-5479-4e67-8ce6-d7b17e3ce9f1.jpg?v=1790627571",
+          "alt": "ADS-3AMSYS19-PLYYV-FFFFFF",
+          "price": "30.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/all-over-print-flat-brim-baseball-cap-with-box"
+        },
+        {
+          "id": "gid://shopify/Product/10230924181607",
+          "handle": "all-over-print-knitted-hat",
+          "title": "All-Over Print Knitted Hat",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/328214-0399ec61-22e5-4cd5-8c37-257a3109091b.jpg?v=1790620765",
+          "alt": "ADS-3AMSZZ21-PLYF9-FFFFFF",
+          "price": "26.08",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/all-over-print-knitted-hat"
+        },
+        {
+          "id": "gid://shopify/Product/10230923001959",
+          "handle": "all-over-print-balaclava-face-mask",
+          "title": "All-Over Print Balaclava Face Mask",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/328214-2282bf86-0eb4-4b8f-a76d-02442251b113.jpg?v=1790620558",
+          "alt": "ADS-TYTTA-PLYED-FFFFFF",
+          "price": "22.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/all-over-print-balaclava-face-mask"
+        },
+        {
+          "id": "gid://shopify/Product/10230914547815",
+          "handle": "all-over-print-peaked-cap-with-box",
+          "title": "All-Over Print Peaked Cap With Box",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/328214-c649a867-32de-4207-83b2-bb495be4f04c.jpg?v=1790619383",
+          "alt": "ADS-3AMSYS22-PLYBH-FFFFFF",
+          "price": "34.30",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/all-over-print-peaked-cap-with-box"
+        },
+        {
+          "id": "gid://shopify/Product/10230913106023",
+          "handle": "all-over-print-neck-gaiter",
+          "title": "All-Over Print Neck Gaiter",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/328214-440fedce-00f4-4ea5-a565-d735e596820d.jpg?v=1790619222",
+          "alt": "ADS-3NG-PLYB2-FFFFFF",
+          "price": "17.88",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/all-over-print-neck-gaiter"
+        },
+        {
+          "id": "gid://shopify/Product/10230904782951",
+          "handle": "unisex-trucker-hat-with-black-half-mesh",
+          "title": "Unisex Trucker Hat With Black Half-mesh",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/328214-080a4fff-5227-4786-b633-70386b061168.jpg?v=1790618092",
+          "alt": "ADS-CPMY-PLY7V-FFFFFF",
+          "price": "24.24",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/unisex-trucker-hat-with-black-half-mesh"
+        },
+        {
+          "id": "gid://shopify/Product/10227339591783",
+          "handle": "all-over-print-beanie-1",
+          "title": "All-Over Print Beanie",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/all-over-print-beanie-white-front-6ab9e00d251b3.jpg?v=1790566441",
+          "alt": "Product mockup",
+          "price": "29.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/all-over-print-beanie-1"
+        },
+        {
+          "id": "gid://shopify/Product/10227333628007",
+          "handle": "all-over-print-beanie",
+          "title": "All-Over Print Beanie",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/all-over-print-beanie-white-front-6ab9de9072213.jpg?v=1790566060",
+          "alt": "Product mockup",
+          "price": "30.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/all-over-print-beanie"
+        },
+        {
+          "id": "gid://shopify/Product/10225980768359",
+          "handle": "cuffed-beanie",
+          "title": "Cuffed Beanie",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/6137599_5502.jpg?v=1790439296",
+          "alt": "Cuffed Beanie",
+          "price": "27.60",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/cuffed-beanie"
+        },
+        {
+          "id": "gid://shopify/Product/10225977720935",
+          "handle": "5-panel-neon-orange-camo",
+          "title": "5 Panel Neon Orange Camo",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/6137577_8590.jpg?v=1790438961",
+          "alt": "5 Panel Neon Orange Camo",
+          "price": "24.02",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/5-panel-neon-orange-camo"
+        },
+        {
+          "id": "gid://shopify/Product/10225975656551",
+          "handle": "skull-cap-4",
+          "title": "skull cap",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/6137576_4394.jpg?v=1790438798",
+          "alt": "skull cap",
+          "price": "26.96",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/skull-cap-4"
+        },
+        {
+          "id": "gid://shopify/Product/10225893277799",
+          "handle": "skull-cap-3",
+          "title": "skull cap",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/6137301_4394.jpg?v=1790433579",
+          "alt": "skull cap",
+          "price": "29.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/skull-cap-3"
+        },
+        {
+          "id": "gid://shopify/Product/10225892589671",
+          "handle": "skull-cap-2",
+          "title": "skull cap",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/6137284_4394.jpg?v=1790433471",
+          "alt": "skull cap",
+          "price": "26.96",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/skull-cap-2"
+        },
+        {
+          "id": "gid://shopify/Product/10225891410023",
+          "handle": "skull-cap-1",
+          "title": "skull cap",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/6137266_4394.jpg?v=1790433295",
+          "alt": "skull cap",
+          "price": "29.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/skull-cap-1"
+        },
+        {
+          "id": "gid://shopify/Product/10225889476711",
+          "handle": "skull-cap",
+          "title": "skull cap",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/6137255_4394.jpg?v=1790433234",
+          "alt": "skull cap",
+          "price": "29.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/skull-cap"
+        },
+        {
+          "id": "gid://shopify/Product/10225876140135",
+          "handle": "vintage-cotton-twill-cap-2",
+          "title": "Vintage Cotton Twill Cap",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/vintage-cap-black-front-6ab7d3cc062f2.jpg?v=1790432211",
+          "alt": "Product mockup",
+          "price": "27.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/vintage-cotton-twill-cap-2"
+        },
+        {
+          "id": "gid://shopify/Product/10225871388775",
+          "handle": "vintage-cotton-twill-cap-1",
+          "title": "Vintage Cotton Twill Cap",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/vintage-cap-black-front-6ab7d3031a09b.jpg?v=1790432010",
+          "alt": "Product mockup",
+          "price": "27.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/vintage-cotton-twill-cap-1"
+        },
+        {
+          "id": "gid://shopify/Product/10225743921255",
+          "handle": "camouflage-trucker-hat-2",
+          "title": "Camouflage trucker hat",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/camouflage-trucker-hat-camo-brown-front-6ab7b00a4bfb1.jpg?v=1790423063",
+          "alt": "Product mockup",
+          "price": "30.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/camouflage-trucker-hat-2"
+        },
+        {
+          "id": "gid://shopify/Product/10225743790183",
+          "handle": "camouflage-trucker-hat-1",
+          "title": "Camouflage trucker hat",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/camouflage-trucker-hat-camo-olive-front-6ac56d982ec66.jpg?v=1791323556",
+          "alt": "Product mockup",
+          "price": "30.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/camouflage-trucker-hat-1"
+        },
+        {
+          "id": "gid://shopify/Product/10224768122983",
+          "handle": "camouflage-trucker-hat",
+          "title": "Camouflage trucker hat",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/camouflage-trucker-hat-camo-black-front-6ac56d0f17e00.jpg?v=1791323418",
+          "alt": "Product mockup",
+          "price": "29.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/camouflage-trucker-hat"
+        },
+        {
+          "id": "gid://shopify/Product/7798160162919",
+          "handle": "cotton-blend-cap-2",
+          "title": "Cotton Blend Cap",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/6082479_5937.jpg?v=1789200381",
+          "alt": "Cotton Blend Cap",
+          "price": "34.84",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/cotton-blend-cap-2"
+        },
+        {
+          "id": "gid://shopify/Product/7798156787815",
+          "handle": "cotton-blend-cap-1",
+          "title": "Cotton Blend Cap",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/6082476_5937.jpg?v=1789200016",
+          "alt": "Cotton Blend Cap",
+          "price": "34.84",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/cotton-blend-cap-1"
+        }
+      ]
+    },
+    "gear-accessories": {
+      "handle": "gear-accessories",
+      "title": "Gear & Accessories",
+      "cover": "https://cdn.shopify.com/s/files/1/0689/1087/4727/collections/gear_and_accesories.png?v=1788600823",
+      "products": [
+        {
+          "id": "gid://shopify/Product/10233689374823",
+          "handle": "kiss-cut-vinyl-decals-1",
+          "title": "Kiss-cut vinyl decals",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/kiss-cut-vinyl-decals-satin-8x10-front-6abd459fd6f37.jpg?v=1790789039",
+          "alt": "Product mockup",
+          "price": "7.50",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/kiss-cut-vinyl-decals-1"
+        },
+        {
+          "id": "gid://shopify/Product/10233688391783",
+          "handle": "kiss-cut-vinyl-decals",
+          "title": "Kiss-cut vinyl decals",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/kiss-cut-vinyl-decals-satin-8x10-front-6abd4510bc435.jpg?v=1790788885",
+          "alt": "Product mockup",
+          "price": "12.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/kiss-cut-vinyl-decals"
+        },
+        {
+          "id": "gid://shopify/Product/10233432834151",
+          "handle": "windshield-sunshade-137cm53-10",
+          "title": "Windshield Sunshade | 137cm(53.9”)",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/328214-1f0f548d-6649-4815-a739-26f77550522c.jpg?v=1790768638",
+          "alt": "ADS-2AASZY02-PMHDM-FFFFFF",
+          "price": "37.50",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/windshield-sunshade-137cm53-10"
+        },
+        {
+          "id": "gid://shopify/Product/10233431949415",
+          "handle": "windshield-sunshade-137cm53-9",
+          "title": "Windshield Sunshade | 137cm(53.9”)",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/328214-8dc9d67e-6c9d-43b5-a40c-ea0d4efd41b0.jpg?v=1790768572",
+          "alt": "ADS-2AASZY02-PMHDH-FFFFFF",
+          "price": "37.50",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/windshield-sunshade-137cm53-9"
+        },
+        {
+          "id": "gid://shopify/Product/10230960816231",
+          "handle": "minimalist-square-crossbody-bucket-bag",
+          "title": "Minimalist Square Crossbody Bucket Bag",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/328214-661a1516-cc2f-4dff-bf89-56575c55d342.jpg?v=1790627159",
+          "alt": "ADS-2ABBDJ69-PLYXE-000000",
+          "price": "79.99",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/minimalist-square-crossbody-bucket-bag"
+        },
+        {
+          "id": "gid://shopify/Product/10230959636583",
+          "handle": "gram-flannel-blanket-printed-in-canada-280gsm",
+          "title": "Gram Flannel Blanket Printed in Canada|280GSM",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/328214-ea6bdfa5-95cc-40d2-8879-00ef22b15c54.jpg?v=1790626846",
+          "alt": "ADS-2HBLTJ17-PLYWP-000000",
+          "price": "24.99",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/gram-flannel-blanket-printed-in-canada-280gsm"
+        },
+        {
+          "id": "gid://shopify/Product/10230959439975",
+          "handle": "lightweight-breathable-quilt-with-edge-wrapping-strips",
+          "title": "Lightweight & Breathable Quilt With Edge-wrapping Strips",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/328214-1e2f9f8b-8a22-49ef-8f49-12e1e4f88acd.jpg?v=1790626694",
+          "alt": "ADS-QI-PLYW9-FFFFFF",
+          "price": "58.54",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/lightweight-breathable-quilt-with-edge-wrapping-strips"
+        },
+        {
+          "id": "gid://shopify/Product/10230926475367",
+          "handle": "mens-classic-clogs-with-fleece",
+          "title": "Men's Classic Clogs with Fleece",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/328214-18869fd2-d3f5-448d-bd89-a9fa50819a72.jpg?v=1790621172",
+          "alt": "ADS-3SMSDD05-PLYGC-000000",
+          "price": "53.46",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/mens-classic-clogs-with-fleece"
+        },
+        {
+          "id": "gid://shopify/Product/10230922379367",
+          "handle": "iphone-17-series-mobile-phone-case-silicone",
+          "title": "iPhone 17 Series Mobile Phone Case | Silicone",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/328214-0b4fdec6-6660-4335-9577-a5308b051f1a.jpg?v=1790620489",
+          "alt": "ADS-2ACPPG36-PLYDW-FFFFFF",
+          "price": "20.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/iphone-17-series-mobile-phone-case-silicone"
+        },
+        {
+          "id": "gid://shopify/Product/10230921986151",
+          "handle": "30oz-cone-car-cup",
+          "title": "30OZ Cone Car Cup",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/328214-39ec65d1-5d38-4e45-bb9f-95120cb17c36.jpg?v=1790620442",
+          "alt": "ADS-FTYZ-PLYDP-FFFFFF",
+          "price": "39.56",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/30oz-cone-car-cup"
+        },
+        {
+          "id": "gid://shopify/Product/10230918217831",
+          "handle": "glitter-tumbler-with-stainless-steel-straw-20oz",
+          "title": "Glitter Tumbler With Stainless Steel Straw 20oz",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/328214-99439bb7-0393-4d57-822e-837c377d7e6d.jpg?v=1790619935",
+          "alt": "ADS-2ATMBZ01-PLYCN-FFFFFF",
+          "price": "40.12",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/glitter-tumbler-with-stainless-steel-straw-20oz"
+        },
+        {
+          "id": "gid://shopify/Product/10230917496935",
+          "handle": "insulated-cylinder-cooler-bag",
+          "title": "Insulated Cylinder Cooler Bag",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/328214-3b7eeaa0-de6d-473f-bc88-7989ff0c6371.jpg?v=1790619812",
+          "alt": "ADS-2ABBLY54-PLYCG-000000",
+          "price": "51.18",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/insulated-cylinder-cooler-bag"
+        },
+        {
+          "id": "gid://shopify/Product/10230915956839",
+          "handle": "all-over-print-pullover-hoodie",
+          "title": "K-9 HOODIE",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/328214-54aeaec5-d168-4a58-8bd0-86f02a966769.jpg?v=1790619600",
+          "alt": "ADS-3GWY-PLYBY-FFFFFF",
+          "price": "30.16",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/all-over-print-pullover-hoodie"
+        },
+        {
+          "id": "gid://shopify/Product/10227341852775",
+          "handle": "duffle-bag",
+          "title": "Duffle bag",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/all-over-print-duffle-bag-white-back-6ab9e18e2f19b.jpg?v=1790566849",
+          "alt": "Product mockup",
+          "price": "90.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/duffle-bag"
+        },
+        {
+          "id": "gid://shopify/Product/7814568968295",
+          "handle": "tapered-stainless-steel-tumbler-1",
+          "title": "Tapered stainless steel tumbler",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/tapered-stainless-steel-tumbler-20-oz-white-20oz-front-6ac40a99ebfdf.jpg?v=1791232674",
+          "alt": "Product mockup",
+          "price": "34.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/tapered-stainless-steel-tumbler-1"
+        },
+        {
+          "id": "gid://shopify/Product/7814568444007",
+          "handle": "tapered-stainless-steel-tumbler",
+          "title": "Tapered stainless steel tumbler",
+          "image": "https://cdn.shopify.com/s/files/1/0689/1087/4727/files/tapered-stainless-steel-tumbler-20-oz-white-20oz-front-6aafc65ccbb10.jpg?v=1789904493",
+          "alt": "Product mockup",
+          "price": "34.00",
+          "available": true,
+          "storeUrl": "https://www.whitetailsyndicate.com/products/tapered-stainless-steel-tumbler"
+        }
+      ]
+    }
+  }
+}
