@@ -63,6 +63,10 @@
         "lede": "Buck, Doe, Yearling, and Fawn. The woods, passed down."
       }
     },
+    "ws_extra_collections": {
+      "type": "ws-extra-collections",
+      "settings": {}
+    },
     "ws_shop": {
       "type": "ws-shop",
       "blocks": {
@@ -164,6 +168,7 @@
   "order": [
     "ws_hero",
     "ws_lines",
+    "ws_extra_collections",
     "ws_shop",
     "ws_story",
     "ws_share",
