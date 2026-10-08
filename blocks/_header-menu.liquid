@@ -9,6 +9,17 @@
 {% liquid
   assign block_settings = block.settings
   assign effective_submenu_color = block_settings.background_color | default: settings.page_background_color
+  assign ws_show_home_link = true
+  assign ws_has_collections_link = false
+  for ws_nav_link in block_settings.menu.links
+    assign ws_nav_title = ws_nav_link.title | downcase
+    if ws_nav_title == 'home'
+      assign ws_show_home_link = false
+    endif
+    if ws_nav_title == 'collections'
+      assign ws_has_collections_link = true
+    endif
+  endfor
 %}
 
 {% case variant %}
@@ -45,7 +56,18 @@
             class="menu-list__list list-unstyled"
             role="list"
           >
+            {% if ws_show_home_link and ws_has_collections_link == false %}
+              <li>
+                <a href="{{ routes.root_url }}#top" id="MenuItem-ws-home" class="menu-list__item">Home</a>
+              </li>
+            {% endif %}
             {% for link in block_settings.menu.links %}
+              {% assign ws_link_title = link.title | downcase %}
+              {% if ws_show_home_link and ws_link_title == 'collections' %}
+              <li>
+                <a href="{{ routes.root_url }}#top" id="MenuItem-ws-home" class="menu-list__item">Home</a>
+              </li>
+              {% endif %}
               <li>
                 <a
                   href="{{ link.url }}"
@@ -93,7 +115,22 @@
     %}
 
     {% capture children %}
+      {% if ws_show_home_link and ws_has_collections_link == false %}
+        <li class="menu-list__list-item">
+          <a href="{{ routes.root_url }}#top" data-skip-node-update="true" class="menu-list__link" ref="menuitem">
+            <span class="menu-list__link-title">Home</span>
+          </a>
+        </li>
+      {% endif %}
       {% for link in block_settings.menu.links %}
+        {% assign ws_link_title = link.title | downcase %}
+        {% if ws_show_home_link and ws_link_title == 'collections' %}
+        <li class="menu-list__list-item">
+          <a href="{{ routes.root_url }}#top" data-skip-node-update="true" class="menu-list__link" ref="menuitem">
+            <span class="menu-list__link-title">Home</span>
+          </a>
+        </li>
+        {% endif %}
         <li
           class="menu-list__list-item"
           on:blur="/deactivate"
