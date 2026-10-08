@@ -1,0 +1,26 @@
+{% render 'ws-home-styles' %}
+<section class="ws-extra-collections" id="more-collections" {{ section.shopify_attributes }}>
+  <div class="ws-section">
+    <div class="ws-extra-collections__grid">
+      <a class="ws-extra-collections__card" href="{{ collections['hats-beanies'].url | default: '/collections/hats-beanies' }}" aria-label="Shop Hats and Beanies">
+        <img src="https://cdn.shopify.com/s/files/1/0689/1087/4727/files/ws-collection-hats-beanies-2026.png?v=1791440900" width="1254" height="1254" alt="The Hats and Beanies Collection" loading="lazy">
+      </a>
+      <a class="ws-extra-collections__card" href="{{ collections['gear-accessories'].url | default: '/collections/gear-accessories' }}" aria-label="Shop Gear and Accessories">
+        <img src="https://cdn.shopify.com/s/files/1/0689/1087/4727/files/ws-collection-gear-accessories-2026.png?v=1791440907" width="1254" height="1254" alt="The Gear and Accessories Collection" loading="lazy">
+      </a>
+      <a class="ws-extra-collections__card" href="#rut" aria-label="Learn about the Rut Line and join notifications">
+        <img src="{{ 'ws-rutline-full.png' | asset_url }}" width="1254" height="1254" alt="The Rut Line — Coming Soon" loading="lazy">
+      </a>
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "WS additional collections",
+  "tag": "section",
+  "class": "ws-extra-collections-section",
+  "disabled_on": {"groups": ["header", "footer"]},
+  "settings": [],
+  "presets": [{"name": "WS additional collections"}]
+}
+{% endschema %}
