@@ -15,6 +15,17 @@
 
 {% liquid
   assign block_settings = block.settings
+  assign ws_show_home_link = true
+  assign ws_has_collections_link = false
+  for ws_nav_link in linklist.links
+    assign ws_nav_title = ws_nav_link.title | downcase
+    if ws_nav_title == 'home'
+      assign ws_show_home_link = false
+    endif
+    if ws_nav_title == 'collections'
+      assign ws_has_collections_link = true
+    endif
+  endfor
   assign max_featured_items = 4
   assign image_border_radius = block_settings.image_border_radius
 
@@ -103,6 +114,13 @@
           class="menu-drawer__menu has-submenu"
           role="list"
         >
+          {% if ws_show_home_link and ws_has_collections_link == false %}
+              <li class="menu-drawer__list-item--flat" style="--menu-drawer-animation-index: 0;">
+                <a href="{{ routes.root_url }}#top" class="menu-drawer__menu-item menu-drawer__menu-item--mainlist menu-drawer__animated-element">
+                  <span class="menu-drawer__menu-item-text wrap-text">Home</span>
+                </a>
+              </li>
+          {% endif %}
           {%- comment -%}
             Handle menus with fewer than 3 levels of links
           {%- endcomment -%}
@@ -110,6 +128,14 @@
             {% assign first_accordion_open = false %}
             {% assign animation_index = 0 %}
             {%- for link in linklist.links -%}
+              {% assign ws_link_title = link.title | downcase %}
+              {% if ws_show_home_link and ws_link_title == 'collections' %}
+              <li class="menu-drawer__list-item--flat" style="--menu-drawer-animation-index: 0;">
+                <a href="{{ routes.root_url }}#top" class="menu-drawer__menu-item menu-drawer__menu-item--mainlist menu-drawer__animated-element">
+                  <span class="menu-drawer__menu-item-text wrap-text">Home</span>
+                </a>
+              </li>
+              {% endif %}
               {% assign animation_index = animation_index | plus: 1 %}
               <li
                 style="--menu-drawer-animation-index: {{ animation_index }};"
@@ -263,6 +289,14 @@
             {%- endcomment -%}
             {% assign animation_index = 0 %}
             {%- for link in linklist.links -%}
+              {% assign ws_link_title = link.title | downcase %}
+              {% if ws_show_home_link and ws_link_title == 'collections' %}
+              <li class="menu-drawer__list-item--flat" style="--menu-drawer-animation-index: 0;">
+                <a href="{{ routes.root_url }}#top" class="menu-drawer__menu-item menu-drawer__menu-item--mainlist menu-drawer__animated-element">
+                  <span class="menu-drawer__menu-item-text wrap-text">Home</span>
+                </a>
+              </li>
+              {% endif %}
               {% assign animation_index = animation_index | plus: 1 %}
               <li
                 class="menu-drawer__list-item"
