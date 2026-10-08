@@ -1,0 +1,93 @@
+{% render 'ws-home-styles' %}
+
+<section class="ws-shop" id="shop" {{ section.shopify_attributes }}>
+  <div class="ws-section">
+    <div class="ws-section__head">
+      {% if section.settings.kicker != blank %}
+        <p class="ws-kicker">{{ section.settings.kicker | escape }}</p>
+      {% endif %}
+      <h2>{{ section.settings.heading | escape }}</h2>
+      {% if section.settings.lede != blank %}
+        <p class="ws-lede">{{ section.settings.lede | escape }}</p>
+      {% endif %}
+    </div>
+    <div class="ws-products">
+      {% for block in section.blocks %}
+        {% assign product = block.settings.product %}
+        {% if product != blank %}
+          <a class="ws-product" href="{{ product.url }}" {{ block.shopify_attributes }}>
+            <div class="ws-product__shot">
+              {% if product.featured_image != blank %}
+                {{
+                  product.featured_image
+                  | image_url: width: 900
+                  | image_tag:
+                    widths: '300, 500, 800',
+                    sizes: '(min-width: 1100px) 25vw, (min-width: 720px) 50vw, 100vw',
+                    alt: product.featured_image.alt
+                }}
+              {% endif %}
+            </div>
+            <div class="ws-product__meta">
+              <h3>{{ product.title | escape }}</h3>
+              <p class="ws-price">{{ product.price | money }}</p>
+            </div>
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "WS shop",
+  "tag": "section",
+  "class": "ws-shop-section",
+  "disabled_on": {
+    "groups": [
+      "header",
+      "footer"
+    ]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "kicker",
+      "label": "Kicker",
+      "default": "The gear"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Featured gear"
+    },
+    {
+      "type": "textarea",
+      "id": "lede",
+      "label": "Line under the heading",
+      "default": "Hoodies, hats and everyday favorites."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "piece",
+      "name": "Product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 4,
+  "presets": [
+    {
+      "name": "WS shop"
+    }
+  ]
+}
+{% endschema %}

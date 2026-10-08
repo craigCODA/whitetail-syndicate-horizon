@@ -1,0 +1,34 @@
+{% unless ws_home_styles_loaded %}
+  <style>
+    @font-face {
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url("{{ 'ws-barlow-400.woff2' | asset_url }}") format("woff2");
+    }
+    @font-face {
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url("{{ 'ws-barlow-600.woff2' | asset_url }}") format("woff2");
+    }
+    @font-face {
+      font-family: "Oswald";
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url("{{ 'ws-oswald-500.woff2' | asset_url }}") format("woff2");
+    }
+    @font-face {
+      font-family: "Rubik Dirt";
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url("{{ 'ws-rubik-dirt.woff2' | asset_url }}") format("woff2");
+    }
+  </style>
+  {{ 'ws-home.css' | asset_url | stylesheet_tag }}
+  {% assign ws_home_styles_loaded = true %}
+{% endunless %}

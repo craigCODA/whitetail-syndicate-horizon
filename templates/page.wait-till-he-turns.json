@@ -1,0 +1,11 @@
+{
+  "sections": {
+    "nathan_story": {
+      "type": "ws-hunt-story",
+      "settings": {}
+    }
+  },
+  "order": [
+    "nathan_story"
+  ]
+}

@@ -1,0 +1,50 @@
+{% render 'ws-home-styles' %}
+
+<section class="ws-hero" id="top" {{ section.shopify_attributes }}>
+  {% if section.settings.image != blank %}
+    {{
+      section.settings.image
+      | image_url: width: 2400
+      | image_tag:
+        class: 'ws-hero__img',
+        widths: '600, 900, 1400, 2073',
+        sizes: '100vw',
+        alt: section.settings.image.alt,
+        loading: 'eager',
+        fetchpriority: 'high'
+    }}
+  {% else %}
+    <img class="ws-hero__img" src="{{ 'ws-home-hero.png' | asset_url }}"
+      alt="Whitetail Syndicate mark beside a buck at sunset. Where the rut leads."
+      width="2073" height="758" loading="eager" fetchpriority="high">
+  {% endif %}
+  <div class="ws-hero__follow">
+    <p>{{ section.settings.statement | escape | newline_to_br }}</p>
+    <div class="ws-hero__links">
+      {% if section.settings.link_1_label != blank and section.settings.link_1_url != blank %}
+        <a href="{{ section.settings.link_1_url }}">{{ section.settings.link_1_label | escape }}</a>
+      {% endif %}
+      {% if section.settings.link_2_label != blank and section.settings.link_2_url != blank %}
+        <a href="{{ section.settings.link_2_url }}">{{ section.settings.link_2_label | escape }}</a>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "WS home hero",
+  "tag": "section",
+  "class": "ws-home-hero-section",
+  "disabled_on": { "groups": ["header", "footer"] },
+  "settings": [
+    { "type": "image_picker", "id": "image", "label": "Banner" },
+    { "type": "textarea", "id": "statement", "label": "Statement", "default": "The people.\nThe place.\nThe hunt." },
+    { "type": "text", "id": "link_1_label", "label": "First link label", "default": "The lines" },
+    { "type": "url", "id": "link_1_url", "label": "First link" },
+    { "type": "text", "id": "link_2_label", "label": "Second link label", "default": "Share a hunt" },
+    { "type": "url", "id": "link_2_url", "label": "Second link" }
+  ],
+  "presets": [{ "name": "WS home hero" }]
+}
+{% endschema %}

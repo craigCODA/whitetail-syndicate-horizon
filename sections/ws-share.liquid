@@ -1,0 +1,84 @@
+{% render 'ws-home-styles' %}
+
+<section class="ws-share" id="share" {{ section.shopify_attributes }}>
+  <div class="ws-panel ws-share__panel">
+    <div class="ws-share__copy">
+      {% if section.settings.kicker != blank %}
+        <p class="ws-kicker">{{ section.settings.kicker | escape }}</p>
+      {% endif %}
+      <h2>{{ section.settings.heading | escape }}</h2>
+      {% if section.settings.text != blank %}
+        <p>{{ section.settings.text | escape }}</p>
+      {% endif %}
+    </div>
+
+    <div class="ws-share__offer">
+      <h3>{{ 'ws.story_offer.title' | t }}</h3>
+      <p class="ws-share__intro">{{ 'ws.story_offer.intro' | t }}</p>
+      {% form 'contact', id: 'WsStoryOffer', class: 'ws-share__form' %}
+        <input type="hidden" name="contact[Story offer]" value="Whitetail Syndicate hunting story offer">
+        <div class="ws-share__field-row">
+          <div class="ws-share__field">
+            <label for="WsStoryName-{{ section.id }}">{{ 'ws.story_offer.name' | t }}</label>
+            <input id="WsStoryName-{{ section.id }}" name="contact[name]" type="text" autocomplete="name" required placeholder="{{ 'ws.story_offer.name_placeholder' | t }}">
+          </div>
+          <div class="ws-share__field">
+            <label for="WsStoryEmail-{{ section.id }}">{{ 'ws.story_offer.email' | t }}</label>
+            <input id="WsStoryEmail-{{ section.id }}" name="contact[email]" type="email" autocomplete="email" required placeholder="{{ 'ws.story_offer.email_placeholder' | t }}" {% if form.errors %}aria-invalid="true" aria-describedby="WsStoryError-{{ section.id }}"{% endif %}>
+          </div>
+        </div>
+        <div class="ws-share__field">
+          <label for="WsStoryMessage-{{ section.id }}">{{ 'ws.story_offer.hunt' | t }} <span>{{ 'ws.story_offer.optional' | t }}</span></label>
+          <textarea id="WsStoryMessage-{{ section.id }}" name="contact[body]" rows="3" placeholder="{{ 'ws.story_offer.hunt_placeholder' | t }}"></textarea>
+        </div>
+        <button class="ws-share__submit" type="submit">{{ 'ws.story_offer.send' | t }} <span aria-hidden="true">→</span></button>
+        {% if form.posted_successfully? %}
+          <p class="ws-share__message" role="status">{{ 'ws.story_offer.success' | t }}</p>
+        {% endif %}
+        {% if form.errors %}
+          <div class="ws-share__message" role="alert" id="WsStoryError-{{ section.id }}">{{ form.errors | default_errors }}</div>
+        {% endif %}
+        <p class="ws-share__fine-print">{{ 'ws.story_offer.notice' | t }}</p>
+      {% endform %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "WS share",
+  "tag": "section",
+  "class": "ws-share-section",
+  "disabled_on": {
+    "groups": [
+      "header",
+      "footer"
+    ]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "kicker",
+      "label": "Kicker",
+      "default": "Become part of the story"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Tell it the way it happened."
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Text",
+      "default": "A successful season. The one that got away. The hunt you are still thinking about. What made it matter beyond whether you got the deer?"
+    }
+  ],
+  "presets": [
+    {
+      "name": "WS share"
+    }
+  ]
+}
+{% endschema %}

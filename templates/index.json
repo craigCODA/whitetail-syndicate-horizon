@@ -1,0 +1,173 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "ws_hero": {
+      "type": "ws-home-hero",
+      "settings": {
+        "statement": "The people.\nThe place.\nThe hunt.",
+        "link_1_label": "The collections",
+        "link_1_url": "/#lines",
+        "link_2_label": "Share a hunt",
+        "link_2_url": "/#share"
+      }
+    },
+    "ws_lines": {
+      "type": "ws-lines",
+      "blocks": {
+        "buck": {
+          "type": "line",
+          "settings": {
+            "collection": "the-buck-collection",
+            "tone": "buck"
+          }
+        },
+        "doe": {
+          "type": "line",
+          "settings": {
+            "collection": "the-doe-collection",
+            "tone": "doe"
+          }
+        },
+        "yearling": {
+          "type": "line",
+          "settings": {
+            "collection": "the-yearling-collection",
+            "tone": "yearling"
+          }
+        },
+        "fawn": {
+          "type": "line",
+          "settings": {
+            "collection": "the-fawn-collection",
+            "tone": "fawn"
+          }
+        }
+      },
+      "block_order": [
+        "buck",
+        "doe",
+        "yearling",
+        "fawn"
+      ],
+      "settings": {
+        "kicker": "Same passion. Every generation.",
+        "heading": "The collections",
+        "lede": "Buck, Doe, Yearling, and Fawn. The woods, passed down."
+      }
+    },
+    "ws_shop": {
+      "type": "ws-shop",
+      "blocks": {
+        "hoodie": {
+          "type": "piece",
+          "settings": {
+            "product": "oversized-cotton-hoodie"
+          }
+        },
+        "beanie": {
+          "type": "piece",
+          "settings": {
+            "product": "all-over-print-beanie"
+          }
+        },
+        "crest": {
+          "type": "piece",
+          "settings": {
+            "product": "all-over-print-beanie-1"
+          }
+        },
+        "trucker": {
+          "type": "piece",
+          "settings": {
+            "product": "camouflage-trucker-hat-1"
+          }
+        }
+      },
+      "block_order": [
+        "hoodie",
+        "beanie",
+        "crest",
+        "trucker"
+      ],
+      "settings": {
+        "kicker": "The gear",
+        "heading": "Featured gear",
+        "lede": "Hoodies, hats and everyday favorites."
+      }
+    },
+    "ws_story": {
+      "type": "ws-story",
+      "settings": {
+        "kicker": "The people behind the hunt",
+        "heading": "Every hunt has a story.",
+        "lead": "The early mornings. The seasons of patience. The person who first took you, and the one you take now. A miss counts. A season that ends with until next year counts.",
+        "link_label": "Share your hunt",
+        "link": "/#share"
+      },
+      "blocks": {
+        "nathan": {
+          "type": "story",
+          "settings": {
+            "story_title": "Wait Till He Turns",
+            "byline": "Nathan Deville",
+            "story_date": "November 8, 2025",
+            "summary": "They went to fill feeders. Nathan brought the .35 Whelen anyway.",
+            "use_original_cover": true,
+            "story_url": "/pages/wait-till-he-turns"
+          }
+        }
+      },
+      "block_order": [
+        "nathan"
+      ]
+    },
+    "ws_share": {
+      "type": "ws-share",
+      "settings": {
+        "kicker": "Become part of the story",
+        "heading": "Tell it the way it happened.",
+        "text": "A successful season. The one that got away. The hunt you are still thinking about. What made it matter beyond whether you got the deer?"
+      }
+    },
+    "ws_rut": {
+      "type": "ws-rut-line",
+      "settings": {
+        "badge": "Coming soon",
+        "heading": "The Rut Line",
+        "text": "Whitetail attraction & nutrition.",
+        "aside": "",
+        "placeholder": "Your email",
+        "button": "Notify me",
+        "success": "You're on the list. We'll tell you when The Rut Line is ready.",
+        "link_label": "Shop Rut Camo",
+        "link": "/#shop"
+      }
+    },
+    "ws_join": {
+      "type": "ws-community-signup",
+      "settings": {
+        "kicker": "Whitetail Syndicate",
+        "heading": "Stay in touch.",
+        "description": "New hunting stories and updates from Whitetail Syndicate.",
+        "button": "Sign up"
+      }
+    }
+  },
+  "order": [
+    "ws_hero",
+    "ws_lines",
+    "ws_shop",
+    "ws_story",
+    "ws_share",
+    "ws_join",
+    "ws_rut"
+  ]
+}

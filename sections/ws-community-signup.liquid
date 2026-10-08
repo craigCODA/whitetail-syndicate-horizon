@@ -1,0 +1,39 @@
+{% render 'ws-home-styles' %}
+<section class="ws-join" id="join" {{ section.shopify_attributes }}>
+  <div class="ws-join__inner">
+    <div class="ws-join__copy">
+      <p class="ws-kicker">{{ section.settings.kicker | escape }}</p>
+      <h2>{{ section.settings.heading | escape }}</h2>
+      <p>{{ section.settings.description | escape }}</p>
+    </div>
+    <div class="ws-join__sign">
+      {% form 'customer', id: 'WsCommunity', class: 'ws-join__form' %}
+        <input type="hidden" name="contact[tags]" value="newsletter,whitetail-community">
+        <label class="visually-hidden" for="WsCommunityEmail-{{ section.id }}">{{ 'ws.signup.email' | t }}</label>
+        <div class="ws-join__input-row">
+          <input id="WsCommunityEmail-{{ section.id }}" type="email" name="contact[email]" required autocomplete="email" autocorrect="off" autocapitalize="off" placeholder="{{ 'ws.signup.email' | t }}" {% if form.errors %}aria-invalid="true" aria-describedby="WsCommunityError-{{ section.id }}"{% endif %}>
+          <button type="submit">{{ section.settings.button | escape }}</button>
+        </div>
+        {% if form.posted_successfully? %}<p class="ws-form-message" data-ws-signup-feedback="community" role="status">{{ 'ws.signup.success' | t }}</p>{% endif %}
+        {% if form.errors %}<p class="ws-form-message" data-ws-signup-feedback="community" role="alert" id="WsCommunityError-{{ section.id }}">{{ form.errors.messages.email | escape }}</p>{% endif %}
+        <p class="ws-join__consent">{{ 'ws.signup.consent' | t }}</p>
+      {% endform %}
+      <a class="ws-join__contact" href="mailto:info@whitetailsyndicate.com">info@whitetailsyndicate.com</a>
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+ "name":"WS community signup",
+ "tag":"section",
+ "class":"ws-join-section",
+ "disabled_on":{"groups":["header","footer"]},
+ "settings":[
+   {"type":"text","id":"kicker","label":"Kicker","default":"Whitetail Syndicate"},
+   {"type":"text","id":"heading","label":"Heading","default":"Stay in touch."},
+   {"type":"textarea","id":"description","label":"Description","default":"New hunting stories and updates from Whitetail Syndicate."},
+   {"type":"text","id":"button","label":"Button","default":"Sign up"}
+ ],
+ "presets":[{"name":"WS community signup"}]
+}
+{% endschema %}

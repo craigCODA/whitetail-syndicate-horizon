@@ -1,0 +1,136 @@
+{% render 'ws-home-styles' %}
+
+<section class="ws-rut" id="rut" {{ section.shopify_attributes }}>
+  <div class="ws-panel">
+    {% if section.settings.badge != blank %}
+      <span class="ws-soon">{{ section.settings.badge | escape }}</span>
+    {% endif %}
+    <h2>{{ section.settings.heading | escape }}</h2>
+    {% if section.settings.text != blank %}
+      <p>{{ section.settings.text | escape }}</p>
+    {% endif %}
+    {% if section.settings.aside != blank %}
+      <p>{{ section.settings.aside | escape }}</p>
+    {% endif %}
+
+    <img
+      class="ws-rut__products"
+      src="{{ 'ws-rutline-full.png' | asset_url }}"
+      alt="Full Rut Line campaign: Whitetail Syndicate branding, buck, scents, attractants, feed, minerals and food plots"
+      width="1254"
+      height="1254"
+      loading="lazy"
+    >
+
+    {% form 'customer', id: 'RutLine', class: 'ws-rut__form' %}
+      <input type="hidden" name="contact[tags]" value="newsletter,rut-line">
+      <label class="visually-hidden" for="RutEmail-{{ section.id }}">{{ section.settings.placeholder | escape }}</label>
+      <input
+        id="RutEmail-{{ section.id }}"
+        type="email"
+        name="contact[email]"
+        autocomplete="email"
+        autocapitalize="off"
+        autocorrect="off"
+        required
+        placeholder="{{ section.settings.placeholder | escape }}"
+        {% if form.errors %}
+          autofocus
+          aria-invalid="true"
+          aria-describedby="RutEmail-error-{{ section.id }}"
+        {% elsif form.posted_successfully? %}
+          aria-describedby="RutEmail-success-{{ section.id }}"
+        {% endif %}
+      >
+      <button type="submit">{{ section.settings.button | escape }}</button>
+      {% if form.posted_successfully? %}
+        <p class="ws-rut__note" data-ws-signup-feedback="rut" id="RutEmail-success-{{ section.id }}" role="status">
+          {{ section.settings.success | escape }}
+        </p>
+      {% endif %}
+      {% if form.errors %}
+        <p class="ws-rut__note" data-ws-signup-feedback="rut" id="RutEmail-error-{{ section.id }}" role="alert">
+          {{ form.errors.messages.email }}
+        </p>
+      {% endif %}
+      <p class="ws-rut__consent">{{ 'ws.signup.consent' | t }}</p>
+    {% endform %}
+
+    {% if section.settings.link_label != blank and section.settings.link != blank %}
+      <a class="ws-text-link" href="{{ section.settings.link }}">{{ section.settings.link_label | escape }}</a>
+    {% endif %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "WS Rut Line",
+  "tag": "section",
+  "class": "ws-rut-section",
+  "disabled_on": {
+    "groups": [
+      "header",
+      "footer"
+    ]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "badge",
+      "label": "Badge",
+      "default": "Coming soon"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "The Rut Line"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Text",
+      "default": "Whitetail attraction & nutrition."
+    },
+    {
+      "type": "textarea",
+      "id": "aside",
+      "label": "Second line"
+    },
+    {
+      "type": "text",
+      "id": "placeholder",
+      "label": "Email field",
+      "default": "Your email"
+    },
+    {
+      "type": "text",
+      "id": "button",
+      "label": "Button",
+      "default": "Notify me"
+    },
+    {
+      "type": "text",
+      "id": "success",
+      "label": "Success message",
+      "default": "You're on the list. We'll tell you when The Rut Line is ready."
+    },
+    {
+      "type": "text",
+      "id": "link_label",
+      "label": "Link label",
+      "default": "Shop Rut Camo"
+    },
+    {
+      "type": "url",
+      "id": "link",
+      "label": "Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "WS Rut Line"
+    }
+  ]
+}
+{% endschema %}

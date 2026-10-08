@@ -1,0 +1,40 @@
+{
+  "visual_reference": "Live Whitetail Syndicate product catalog and approved local layout",
+  "scope": "Local review package. No changes uploaded to Shopify.",
+  "rutline_source": "https://www.whitetailsyndicate.com/cdn/shop/collections/rutline_collection_2.png?v=1788601123",
+  "rutline_original_dimensions": [
+    1254,
+    1254
+  ],
+  "rutline_render": "Full image, natural aspect ratio, no crop.",
+  "commerce": "Horizon product pages, cart, checkout integration, native header/footer and customer newsletter forms retained. Shopify rendering still requires a draft-theme check before publication.",
+  "review_status": "Full collection graphics pulled from the live storefront on October 5, 2026, then locally edited to use catalog clothing/gear. Collection tiles link only to collections.",
+  "catalog_title_overrides_removed": true,
+  "collection_product_sources": [],
+  "live_collection_tiles": [
+    {
+      "line": "buck",
+      "live_original": "live_collection_repair_20261005/originals/buck-live.png",
+      "edited_asset": "ws-line-buck-live.png",
+      "collection": "the-buck-collection"
+    },
+    {
+      "line": "doe",
+      "live_original": "live_collection_repair_20261005/originals/doe-live.png",
+      "edited_asset": "ws-line-doe-live.png",
+      "collection": "the-doe-collection"
+    },
+    {
+      "line": "yearling",
+      "live_original": "live_collection_repair_20261005/originals/yearling-live.png",
+      "edited_asset": "ws-line-yearling-live.png",
+      "collection": "the-yearling-collection"
+    },
+    {
+      "line": "fawn",
+      "live_original": "live_collection_repair_20261005/originals/fawn-live.png",
+      "edited_asset": "ws-line-fawn-live.png",
+      "collection": "the-fawn-collection"
+    }
+  ]
+}

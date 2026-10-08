@@ -1,0 +1,85 @@
+{% render 'ws-home-styles' %}
+
+<section class="ws-lines" id="lines" {{ section.shopify_attributes }}>
+  <div class="ws-section">
+    <div class="ws-section__head">
+      {% if section.settings.kicker != blank %}<p class="ws-kicker">{{ section.settings.kicker | escape }}</p>{% endif %}
+      <h2>{{ section.settings.heading | escape }}</h2>
+      {% if section.settings.lede != blank %}<p class="ws-lede">{{ section.settings.lede | escape }}</p>{% endif %}
+    </div>
+    <div class="ws-grid">
+      {% for block in section.blocks %}
+        {% liquid
+          assign tone = block.settings.tone
+          assign collection_href = block.settings.collection.url
+          if collection_href == blank
+            assign collection_href = '#shop'
+          endif
+          case tone
+            when 'doe'
+              assign fallback = 'ws-line-doe-live.png'
+              assign label = 'Doe'
+              assign fallback_width = 1375
+              assign fallback_height = 1144
+            when 'yearling'
+              assign fallback = 'ws-line-yearling-live.png'
+              assign label = 'Yearling'
+              assign fallback_width = 1374
+              assign fallback_height = 1145
+            when 'fawn'
+              assign fallback = 'ws-line-fawn-live.png'
+              assign label = 'Fawn'
+              assign fallback_width = 1375
+              assign fallback_height = 1144
+            else
+              assign fallback = 'ws-line-buck-live.png'
+              assign label = 'Buck'
+              assign fallback_width = 1374
+              assign fallback_height = 1145
+          endcase
+        %}
+        <a class="ws-card ws-card--{{ tone }}" href="{{ collection_href }}" aria-label="Shop The {{ label }} Collection" {{ block.shopify_attributes }}>
+          <span class="ws-card__media">
+            {% if block.settings.image != blank %}
+              {{ block.settings.image | image_url: width: 1600 | image_tag: widths: '500, 900, 1300, 1600', sizes: '(min-width: 721px) 50vw, 100vw', alt: block.settings.image.alt }}
+            {% else %}
+              <img src="{{ fallback | asset_url }}" alt="The {{ label }} Collection" width="{{ fallback_width }}" height="{{ fallback_height }}" loading="lazy">
+            {% endif %}
+          </span>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "WS lines",
+  "tag": "section",
+  "class": "ws-lines-section",
+  "disabled_on": { "groups": ["header", "footer"] },
+  "settings": [
+    { "type": "text", "id": "kicker", "label": "Kicker", "default": "Same passion. Every generation." },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "The collections" },
+    { "type": "textarea", "id": "lede", "label": "Line under the heading", "default": "Buck, Doe, Yearling, and Fawn. The woods, passed down." }
+  ],
+  "blocks": [
+    {
+      "type": "line",
+      "name": "Line",
+      "settings": [
+        { "type": "collection", "id": "collection", "label": "Collection" },
+        { "type": "select", "id": "tone", "label": "Color", "default": "buck", "options": [
+          { "value": "buck", "label": "Buck" },
+          { "value": "doe", "label": "Doe" },
+          { "value": "yearling", "label": "Yearling" },
+          { "value": "fawn", "label": "Fawn" }
+        ] },
+        { "type": "image_picker", "id": "image", "label": "Optional tile image" }
+      ]
+    }
+  ],
+  "max_blocks": 4,
+  "presets": [{ "name": "WS lines" }]
+}
+{% endschema %}

@@ -1,0 +1,141 @@
+{% render 'ws-home-styles' %}
+
+<section class="ws-story" id="stories" {{ section.shopify_attributes }}>
+  {% if section.settings.kicker != blank %}
+    <p class="ws-kicker">{{ section.settings.kicker | escape }}</p>
+  {% endif %}
+  <h2>{{ section.settings.heading | escape }}</h2>
+  {% if section.settings.lead != blank %}
+    <p class="ws-story__lead">{{ section.settings.lead | escape }}</p>
+  {% endif %}
+  {% if section.settings.link_label != blank and section.settings.link != blank %}
+    <a class="ws-text-link" href="{{ section.settings.link }}">{{ section.settings.link_label | escape }}</a>
+  {% endif %}
+  {% if section.blocks.size > 0 %}
+  <div class="ws-story-gallery" aria-label="Hunting stories">
+    {% for block in section.blocks %}
+      {% if block.settings.story_title != blank %}
+        {% liquid
+          assign story_url = block.settings.story_url
+          if story_url == blank and block.settings.use_original_cover
+            assign story_url = '/pages/wait-till-he-turns'
+          endif
+        %}
+        {% if story_url != blank %}
+          <a class="ws-story-tile" href="{{ story_url }}" {{ block.shopify_attributes }}>
+            <div class="ws-story-tile__photo">
+              {% if block.settings.cover_image != blank %}
+                {{ block.settings.cover_image | image_url: width: 920 | image_tag: class: 'ws-story-tile__img', loading: 'lazy', widths: '400, 640, 920', sizes: '(max-width: 720px) 100vw, 40vw', alt: block.settings.story_title }}
+              {% elsif block.settings.use_original_cover %}
+                <img class="ws-story-tile__img" src="{{ 'ws-story-nathan-photo.jpg' | asset_url }}" alt="Nathan Deville with his eight point buck" loading="lazy" width="1152" height="1536">
+              {% endif %}
+            </div>
+            <div class="ws-story-tile__content">
+              {% if block.settings.byline != blank %}<p class="ws-story-tile__byline">{{ block.settings.byline | escape }}{% if block.settings.story_date != blank %} &nbsp;·&nbsp; {{ block.settings.story_date | escape }}{% endif %}</p>{% endif %}
+              <h3>{{ block.settings.story_title | escape }}</h3>
+              {% if block.settings.summary != blank %}<p class="ws-story-tile__summary">{{ block.settings.summary | escape }}</p>{% endif %}
+              <span class="ws-story-tile__action">{{ 'ws.stories.read' | t }} &rarr;</span>
+            </div>
+          </a>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </div>
+  {% endif %}
+</section>
+
+
+{% schema %}
+{
+  "name": "WS story",
+  "tag": "section",
+  "class": "ws-story-section",
+  "disabled_on": {
+    "groups": [
+      "header",
+      "footer"
+    ]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "kicker",
+      "label": "Kicker",
+      "default": "The people behind the hunt"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Every hunt has a story."
+    },
+    {
+      "type": "textarea",
+      "id": "lead",
+      "label": "Introduction",
+      "default": "The early mornings. The seasons of patience. The person who first took you, and the one you take now. A miss counts. A season that ends with until next year counts."
+    },
+    {
+      "type": "text",
+      "id": "link_label",
+      "label": "Share link label",
+      "default": "Share your hunt"
+    },
+    {
+      "type": "url",
+      "id": "link",
+      "label": "Share link"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "story",
+      "name": "Hunting story",
+      "settings": [
+        {
+          "type": "text",
+          "id": "story_title",
+          "label": "Story title"
+        },
+        {
+          "type": "text",
+          "id": "byline",
+          "label": "Hunter / byline"
+        },
+        {
+          "type": "text",
+          "id": "story_date",
+          "label": "Story date"
+        },
+        {
+          "type": "textarea",
+          "id": "summary",
+          "label": "Short description"
+        },
+        {
+          "type": "image_picker",
+          "id": "cover_image",
+          "label": "Cover image"
+        },
+        {
+          "type": "checkbox",
+          "id": "use_original_cover",
+          "label": "Use Nathan story photo",
+          "default": false
+        },
+        {
+          "type": "url",
+          "id": "story_url",
+          "label": "Story page link"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 12,
+  "presets": [
+    {
+      "name": "WS story"
+    }
+  ]
+}
+{% endschema %}

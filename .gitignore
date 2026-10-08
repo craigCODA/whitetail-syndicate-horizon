@@ -1,0 +1,10 @@
+# Local / IDE files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.shopify/
+node_modules/
+*.log
+.env
+.env.*
