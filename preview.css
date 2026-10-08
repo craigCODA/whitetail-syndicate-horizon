@@ -5,14 +5,14 @@
 @font-face{font-family:"Rubik Dirt";src:url("assets/ws-rubik-dirt.woff2") format("woff2");font-weight:400;font-display:swap}
 :root{--ws-bg:#0e0d0b;--ws-cream:#f6f1e7;--ws-gold:#e0c089;--ws-muted:#cfc4b4;--ws-stroke:rgba(224,192,137,.28);color-scheme:dark}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;scroll-padding-top:115px}
 body{margin:0;background:var(--ws-bg);color:var(--ws-cream);font:400 16px/1.5 "Barlow",Arial,sans-serif}
 a{color:inherit}
 a:focus-visible,button:focus-visible{outline:3px solid var(--ws-gold);outline-offset:4px}
 img{max-width:100%}
 .preview-notice{display:flex;gap:10px;justify-content:center;align-items:center;flex-wrap:wrap;min-height:32px;padding:7px 20px;background:#a77d44;color:#100e0b;text-align:center;font-size:11px;font-weight:600;letter-spacing:.075em;text-transform:uppercase}
 .preview-notice a{text-decoration:underline;text-underline-offset:2px}
-.site-header{position:relative;z-index:10;display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:88px;padding:12px max(24px,calc((100vw - 1388px)/2));background:#0e0c0acc;border-bottom:1px solid var(--ws-stroke)}
+.site-header{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:88px;padding:12px max(24px,calc((100vw - 1388px)/2));background:rgba(14,12,10,.97);border-bottom:1px solid var(--ws-stroke)}
 .site-brand{display:flex;align-items:center;flex:0 0 auto;width:min(220px,43vw);min-height:60px}
 .site-brand img{height:64px;max-width:100%;width:auto;object-fit:contain;object-position:left center}
 .site-nav{display:flex;align-items:center;justify-content:flex-end;gap:clamp(12px,2.5vw,34px);flex-wrap:wrap}
@@ -78,6 +78,7 @@ img{max-width:100%}
 .story-header-preamble a{display:inline-block;padding:15px 26px;color:var(--ws-gold);text-decoration:none;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
 @media(max-width:1100px){.collection-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:820px){
+ html{scroll-padding-top:175px}
  .site-header{padding:12px 20px;flex-wrap:wrap;justify-content:center;text-align:center}
  .site-brand{justify-content:center}
  .site-brand img{object-position:center}
@@ -89,6 +90,7 @@ img{max-width:100%}
  .preview-detail{grid-template-columns:1fr}
 }
 @media(max-width:570px){
+ html{scroll-padding-top:205px}
  .site-brand{width:165px}
  .site-brand img{height:54px}
  .site-nav{gap:12px}
