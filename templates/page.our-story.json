@@ -1,0 +1,11 @@
+{
+  "sections": {
+    "our_story": {
+      "type": "ws-our-story",
+      "settings": {}
+    }
+  },
+  "order": [
+    "our_story"
+  ]
+}

@@ -1,0 +1,23 @@
+/* Whitetail Syndicate / Our Story. Scoped for static preview and Horizon. */
+.ws-our-story{--story-ink:#f6f1e7;--story-muted:#cfc4b4;--story-gold:#e0c089;display:block;min-width:0;background:#100f0d;color:var(--story-ink);font-family:"Barlow","Segoe UI",Arial,sans-serif;}
+.ws-our-story,.ws-our-story *{box-sizing:border-box}
+.ws-our-story__hero{position:relative;isolation:isolate;display:flex;align-items:flex-end;min-height:clamp(390px,64svh,730px);overflow:hidden;background:#171610;}
+.ws-our-story__hero::before{content:"";position:absolute;inset:0;z-index:-2;background-image:linear-gradient(90deg,rgba(10,11,9,.94) 0%,rgba(10,11,9,.78) 42%,rgba(10,11,9,.40) 100%),linear-gradient(0deg,#100f0d 0%,rgba(16,15,13,.08) 68%),var(--ws-our-story-cover);background-repeat:no-repeat;background-size:cover;background-position:center,center,center 46%;filter:saturate(.83);}
+.ws-our-story__hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,#100f0d 0%,transparent 42%);pointer-events:none;}
+.ws-our-story__hero-inner{width:min(100%,1220px);margin:0 auto;padding:4rem clamp(22px,6vw,82px) 4.5rem;}
+.ws-our-story__eyebrow{margin:0 0 1.15rem;color:var(--story-gold);font:600 .79rem/1.5 "Barlow","Segoe UI",Arial,sans-serif;text-transform:uppercase;letter-spacing:.2em;}
+.ws-our-story h1{margin:0;font:500 clamp(4.3rem,12vw,10rem)/.86 "Oswald","Arial Narrow",Arial,sans-serif;text-transform:uppercase;letter-spacing:.025em;color:#fffaf0;}
+.ws-our-story__tagline{max-width:34rem;margin:1.7rem 0 0;font:400 clamp(1.25rem,2.9vw,1.85rem)/1.4 Georgia,"Times New Roman",serif;color:#f0dcc0;}
+.ws-our-story__content{width:min(100% - 44px,790px);margin:0 auto;padding:clamp(58px,8vw,104px) 0 clamp(72px,10vw,124px);}
+.ws-our-story__content p{margin:0 0 1.55em;font:400 clamp(1.13rem,2vw,1.3rem)/1.72 "Barlow","Segoe UI",Arial,sans-serif;color:var(--story-ink);text-wrap:pretty;}
+.ws-our-story__content .ws-our-story__lead{margin-bottom:2em;font-size:clamp(1.38rem,2.6vw,1.9rem);line-height:1.5;font-family:Georgia,"Times New Roman",serif;color:#f5dfb9;}
+.ws-our-story__content .ws-our-story__turn{margin:3rem 0;padding:1.4rem 0 1.4rem clamp(18px,4vw,34px);border-left:3px solid var(--story-gold);font:500 clamp(2.3rem,5vw,4.2rem)/1.04 "Oswald","Arial Narrow",Arial,sans-serif;text-transform:uppercase;color:var(--story-gold);}
+.ws-our-story__content .ws-our-story__closing{margin:3rem 0 .5rem;padding-top:2.3rem;border-top:1px solid rgba(224,192,137,.28);font:500 clamp(2.7rem,6vw,4.9rem)/.99 "Oswald","Arial Narrow",Arial,sans-serif;text-transform:uppercase;color:var(--story-gold);}
+.ws-our-story__content .ws-our-story__closing + p{font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.25rem,2.3vw,1.6rem);color:#e8d8c0;}
+.ws-our-story__next{display:flex;flex-wrap:wrap;gap:12px;margin-top:3.2rem;}
+.ws-our-story__next a{display:inline-block;padding:13px 19px;border:1px solid rgba(224,192,137,.58);color:var(--story-gold);text-decoration:none;font:600 .8rem/1.4 "Barlow","Segoe UI",Arial,sans-serif;text-transform:uppercase;letter-spacing:.12em;transition:background-color .15s ease,color .15s ease;}
+.ws-our-story__next a:hover{background:var(--story-gold);color:#100f0d;}
+.ws-our-story__next a:focus-visible{outline:3px solid #fff6df;outline-offset:3px;}
+@media(max-width:650px){.ws-our-story__hero{min-height:490px}.ws-our-story__hero::before{background-position:center,center,58% center}.ws-our-story__hero-inner{padding:3rem 22px 3.3rem}.ws-our-story h1{font-size:clamp(4.3rem,19vw,6.5rem)}.ws-our-story__content{width:min(100% - 38px,790px)}.ws-our-story__content .ws-our-story__turn{margin:2.7rem 0}}
+@media(prefers-reduced-motion:reduce){.ws-our-story__next a{transition:none}}
+@media print{.ws-our-story{background:#fff;color:#1b1a17}.ws-our-story__hero{min-height:210px;background:#fff}.ws-our-story__hero::before,.ws-our-story__hero::after{display:none}.ws-our-story h1,.ws-our-story__content p{color:#1b1a17}.ws-our-story__tagline,.ws-our-story__content .ws-our-story__lead{color:#4c4130}.ws-our-story__next{display:none}}

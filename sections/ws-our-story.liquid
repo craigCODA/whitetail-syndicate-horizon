@@ -1,0 +1,41 @@
+{% render 'ws-home-styles' %}
+{{ 'ws-our-story.css' | asset_url | stylesheet_tag }}
+<article class="ws-our-story" aria-labelledby="our-story-title" style="--ws-our-story-cover: url('{{ 'ws-home-hero.png' | asset_url }}');" {{ section.shopify_attributes }}>
+  <header class="ws-our-story__hero">
+    <div class="ws-our-story__hero-inner">
+      <p class="ws-our-story__eyebrow">Whitetail Syndicate</p>
+      <h1 id="our-story-title">Our Story</h1>
+      <p class="ws-our-story__tagline">The People. The Place. The Hunt.</p>
+    </div>
+  </header>
+  <div class="ws-our-story__content">
+<p class="ws-our-story__lead">There are hunts you'll remember because of the buck you brought home. And there are others where you never even got a shot, but you'll remember those just as well.</p>
+<p>The ride in before daylight. The cold mornings. The place you've hunted for years. The first time somebody took you into the woods. The people you shared those moments with, and sometimes the people who aren't here to share them anymore.</p>
+<p>That's what Whitetail Syndicate is about.</p>
+<p>We believe there's a whole lot more to hunting than what ends up hanging on the wall. There's the preparation, the waiting, the mistakes, the excitement, and everything that happens between one season and the next.</p>
+<p>Some people have been hunting their entire lives. Others are just getting started. Some chase the biggest buck they can find, while others would give anything for one more morning in the woods with their dad.</p>
+<p>Different people. Different places. But something about it connects us all.</p>
+<p class="ws-our-story__turn">That's the Syndicate.</p>
+<p>Whitetail Syndicate is built around those people and the stories they carry. We make apparel that represents that connection, but the clothing isn't what makes this brand. The people wearing it are.</p>
+<p>And there's something else we believe.</p>
+<p>Not every great hunting story ends with a successful harvest. Sometimes it's the one that got away. Sometimes it's the mistake you still laugh about. Sometimes it's a hunt that changed the way you look at things.</p>
+<p>Those stories deserve to be heard, too.</p>
+<p>We want Whitetail Syndicate to become a place where those experiences can be shared, remembered, and passed along. Where an everyday hunter's story can mean just as much as the biggest trophy anybody has ever taken.</p>
+<p>Because years from now, when the details of the hunt start to fade, it's the people, the places, and those moments that we'll still be talking about.</p>
+<p class="ws-our-story__closing">Every Hunt Has a Story.</p>
+<p>And we want to hear yours.</p>
+    <nav class="ws-our-story__next" aria-label="Explore Whitetail Syndicate">
+      <a href="/pages/wait-till-he-turns">Read a hunter's story &rarr;</a>
+      <a href="/#share">Share a hunt &rarr;</a>
+    </nav>
+  </div>
+</article>
+{% schema %}
+{
+  "name": "WS Our Story",
+  "tag": "section",
+  "class": "ws-our-story-section",
+  "settings": [],
+  "presets": [{ "name": "WS Our Story" }]
+}
+{% endschema %}
