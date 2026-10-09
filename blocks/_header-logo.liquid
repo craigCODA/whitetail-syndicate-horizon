@@ -401,6 +401,19 @@
     #header-component .ws-header-brand__wordmark span:last-child {font-size: 9px;}
   }
 
+
+  /* A global mobile portrait safety rule: Habitat uses the original Nathan 3:4 photo. */
+  @media screen and (max-width: 600px) {
+    .ws-lifestyle-page .ws-lifestyle-page__story img {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 3 / 4;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+
 {% endstylesheet %}
 
 {% schema %}
