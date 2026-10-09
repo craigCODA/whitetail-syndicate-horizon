@@ -68,7 +68,7 @@
 .ws-collection-hero__title {
   margin: 0;
   color: #f6f1e7;
-  font: 500 clamp(39px, 5.4vw, 68px)/1.08 "Oswald", "Arial Narrow", Arial, sans-serif;
+  font: 900 clamp(39px, 5.4vw, 68px)/1.02 "Roboto Slab", "Rockwell Extra Bold", Rockwell, Georgia, serif;
   letter-spacing: .025em;
   text-transform: uppercase;
 }
@@ -95,4 +95,37 @@
 }
 @media (prefers-reduced-motion: reduce) {
   .ws-collection-hero__image { transition: none; }
+}
+
+/* All-products is one panoramic six-image header; category pages use one portrait source each. */
+.ws-collection-hero--all .ws-collection-hero__artwork {
+  height: auto;
+  min-height: 0;
+  aspect-ratio: 3 / 1;
+}
+.ws-collection-hero--all .ws-collection-hero__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: contain;
+  box-shadow: none;
+}
+.ws-collection-hero--all .ws-collection-hero__artwork::before,
+.ws-collection-hero--all .ws-collection-hero__artwork::after {
+  display: none;
+}
+.ws-collection-hero--all .ws-collection-hero__details {
+  padding-top: clamp(26px, 3vw, 45px);
+  padding-bottom: clamp(26px, 3vw, 45px);
+}
+@media (max-width:740px) {
+  .ws-collection-hero--all .ws-collection-hero__artwork {
+    aspect-ratio: 3 / 1;
+    height: auto;
+  }
+  .ws-collection-hero--all .ws-collection-hero__image {
+    width: 100%;
+    height: 100%;
+  }
 }
