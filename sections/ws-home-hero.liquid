@@ -1,4 +1,5 @@
 {% render 'ws-home-styles' %}
+{{ 'ws-field-notes.css' | asset_url | stylesheet_tag }}
 
 <section class="ws-hero" id="top" {{ section.shopify_attributes }}>
   {% if section.settings.image != blank %}
@@ -28,6 +29,7 @@
         <a href="{{ section.settings.link_2_url }}">{{ section.settings.link_2_label | escape }}</a>
       {% endif %}
     </div>
+    {% render 'ws-field-notes', notes: section.settings %}
   </div>
 </section>
 
@@ -36,15 +38,109 @@
   "name": "WS home hero",
   "tag": "section",
   "class": "ws-home-hero-section",
-  "disabled_on": { "groups": ["header", "footer"] },
+  "disabled_on": {
+    "groups": [
+      "header",
+      "footer"
+    ]
+  },
   "settings": [
-    { "type": "image_picker", "id": "image", "label": "Banner" },
-    { "type": "textarea", "id": "statement", "label": "Statement", "default": "The people.\nThe place.\nThe hunt." },
-    { "type": "text", "id": "link_1_label", "label": "First link label", "default": "The lines" },
-    { "type": "url", "id": "link_1_url", "label": "First link" },
-    { "type": "text", "id": "link_2_label", "label": "Second link label", "default": "Share a hunt" },
-    { "type": "url", "id": "link_2_url", "label": "Second link" }
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Banner"
+    },
+    {
+      "type": "textarea",
+      "id": "statement",
+      "label": "Statement",
+      "default": "The people.\nThe place.\nThe hunt."
+    },
+    {
+      "type": "text",
+      "id": "link_1_label",
+      "label": "First link label",
+      "default": "The lines"
+    },
+    {
+      "type": "url",
+      "id": "link_1_url",
+      "label": "First link"
+    },
+    {
+      "type": "text",
+      "id": "link_2_label",
+      "label": "Second link label",
+      "default": "Share a hunt"
+    },
+    {
+      "type": "url",
+      "id": "link_2_url",
+      "label": "Second link"
+    },
+    {
+      "type": "header",
+      "content": "From the Field"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_field_notes",
+      "label": "Show From the Field panel",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "field_notes_title",
+      "label": "Panel heading",
+      "default": "From the Field"
+    },
+    {
+      "type": "textarea",
+      "id": "field_notes_lead",
+      "label": "Short introduction",
+      "default": "Notes from the woods, the community, and the Syndicate."
+    },
+    {
+      "type": "text",
+      "id": "field_notes_first_title",
+      "label": "First heading",
+      "default": "Hunting calendar"
+    },
+    {
+      "type": "textarea",
+      "id": "field_notes_first_text",
+      "label": "First text",
+      "default": "Season dates and important reminders, verified before posting."
+    },
+    {
+      "type": "text",
+      "id": "field_notes_second_title",
+      "label": "Second heading",
+      "default": "Community events"
+    },
+    {
+      "type": "textarea",
+      "id": "field_notes_second_text",
+      "label": "Second text",
+      "default": "Local hunts, gatherings, shows and club events."
+    },
+    {
+      "type": "text",
+      "id": "field_notes_third_title",
+      "label": "Third heading",
+      "default": "Syndicate updates"
+    },
+    {
+      "type": "textarea",
+      "id": "field_notes_third_text",
+      "label": "Third text",
+      "default": "New stories, brand news, and what's coming next."
+    }
   ],
-  "presets": [{ "name": "WS home hero" }]
+  "presets": [
+    {
+      "name": "WS home hero"
+    }
+  ]
 }
 {% endschema %}
