@@ -1,0 +1,71 @@
+{% comment %}
+  Whitetail Syndicate collection masthead.
+  Uses each Shopify collection's own art without overlaying headings or cropping its wording.
+  Shared by /collections/all, category collections and paginated collection URLs.
+{% endcomment %}
+{{ 'ws-collection-hero.css' | asset_url | stylesheet_tag }}
+
+{% liquid
+  assign is_full_catalog = false
+  if collection.handle == 'all'
+    assign is_full_catalog = true
+  endif
+  assign artwork_alt = collection.image.alt | default: collection.title
+%}
+
+<section class="ws-collection-hero{% if is_full_catalog %} ws-collection-hero--all{% endif %}" aria-labelledby="ws-collection-title" {{ section.shopify_attributes }}>
+  {% if collection.image != blank and section.settings.show_artwork %}
+    <div
+      class="ws-collection-hero__artwork"
+      style="--ws-collection-artwork: url('{{ collection.image | image_url: width: 2000 }}');"
+    >
+      {{ collection.image
+        | image_url: width: 1800
+        | image_tag:
+          class: 'ws-collection-hero__image',
+          widths: '480, 720, 1000, 1400, 1800',
+          sizes: '(min-width: 750px) 700px, 95vw',
+          alt: artwork_alt,
+          loading: 'eager'
+      }}
+    </div>
+  {% endif %}
+
+  <div class="ws-collection-hero__details">
+    <p class="ws-collection-hero__eyebrow">
+      {% if is_full_catalog %}
+        Whitetail Syndicate / The Store
+      {% else %}
+        Whitetail Syndicate / The Collections
+      {% endif %}
+    </p>
+    <h1 class="ws-collection-hero__title" id="ws-collection-title">
+      {% if is_full_catalog %}
+        Shop All Gear
+      {% else %}
+        {{ collection.title | escape }}
+      {% endif %}
+    </h1>
+    {% if section.settings.show_description %}
+      {% if collection.description != blank %}
+        <div class="ws-collection-hero__description rte">{{ collection.description }}</div>
+      {% elsif is_full_catalog %}
+        <p class="ws-collection-hero__description">Explore all Whitetail Syndicate apparel, hats, and gear.</p>
+      {% endif %}
+    {% endif %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "WS collection intro",
+  "tag": "section",
+  "class": "ws-collection-hero-section",
+  "enabled_on": { "templates": ["collection"] },
+  "settings": [
+    { "type": "checkbox", "id": "show_artwork", "label": "Show collection artwork", "default": true },
+    { "type": "checkbox", "id": "show_description", "label": "Show collection description", "default": true }
+  ],
+  "presets": [{ "name": "WS collection intro" }]
+}
+{% endschema %}
