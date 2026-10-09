@@ -1,0 +1,13 @@
+{
+  "sections": {
+    "ws_lifestyle": {
+      "type": "ws-lifestyle-page",
+      "settings": {
+        "category": "habitat"
+      }
+    }
+  },
+  "order": [
+    "ws_lifestyle"
+  ]
+}
