@@ -1,0 +1,22 @@
+#header-component .header-menu .ws-lifestyle-menu-item { position:relative; }
+#header-component .header-menu .ws-lifestyle-dropdown {position:relative;height:100%;display:flex;align-items:center;}
+#header-component .header-menu .ws-lifestyle-dropdown__trigger{list-style:none;cursor:pointer;white-space:nowrap;}
+#header-component .header-menu .ws-lifestyle-dropdown__trigger::-webkit-details-marker{display:none;}
+#header-component .header-menu .ws-nav-caret{font-size:10px;margin-left:4px;opacity:.75;}
+#header-component .header-menu .ws-lifestyle-dropdown__panel{
+ display:none;position:absolute;top:100%;left:0;z-index:1000;min-width:220px;padding:8px;
+ background:#17130f;border:1px solid rgba(224,192,137,.38);box-shadow:0 16px 35px rgba(0,0,0,.55);
+}
+#header-component .header-menu .ws-lifestyle-dropdown[open] .ws-lifestyle-dropdown__panel,
+#header-component .header-menu .ws-lifestyle-dropdown:hover .ws-lifestyle-dropdown__panel,
+#header-component .header-menu .ws-lifestyle-dropdown:focus-within .ws-lifestyle-dropdown__panel {display:flex;flex-direction:column;}
+#header-component .header-menu .ws-lifestyle-dropdown__panel a{display:block;padding:10px 12px;color:#f6f1e7;text-transform:uppercase;font-size:12px;letter-spacing:.07em;text-decoration:none;}
+#header-component .header-menu .ws-lifestyle-dropdown__panel a:hover,
+#header-component .header-menu .ws-lifestyle-dropdown__panel a:focus-visible{background:rgba(224,192,137,.14);color:#e0c089;}
+#header-component .header-menu .ws-home-nav-link{color:#e0c089;}
+.ws-mobile-lifestyle details summary{list-style:none;cursor:pointer;}
+.ws-mobile-lifestyle details summary::-webkit-details-marker{display:none;}
+.ws-mobile-lifestyle__links{display:flex;flex-direction:column;padding-left:28px;background:rgba(224,192,137,.06);}
+.ws-mobile-lifestyle__links a{padding:11px 12px;border-bottom:1px solid rgba(224,192,137,.12);color:inherit;font-size:13px;text-decoration:none;}
+.ws-mobile-lifestyle__links a:hover,.ws-mobile-lifestyle__links a:focus-visible{color:#e0c089;}
+html{scroll-padding-top:100px;}
