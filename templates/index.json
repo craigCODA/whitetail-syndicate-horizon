@@ -116,22 +116,8 @@
         "link_label": "Share your hunt",
         "link": "/#share"
       },
-      "blocks": {
-        "nathan": {
-          "type": "story",
-          "settings": {
-            "story_title": "Wait Till He Turns",
-            "byline": "Nathan Deville",
-            "story_date": "November 8, 2025",
-            "summary": "They went to fill feeders. Nathan brought the .35 Whelen anyway.",
-            "use_original_cover": true,
-            "story_url": "/pages/wait-till-he-turns"
-          }
-        }
-      },
-      "block_order": [
-        "nathan"
-      ]
+      "blocks": {},
+      "block_order": []
     },
     "ws_share": {
       "type": "ws-share",
