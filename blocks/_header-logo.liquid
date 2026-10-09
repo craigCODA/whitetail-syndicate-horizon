@@ -262,6 +262,145 @@
     }
     .ws-header-brand__wordmark { font-size: 14px; }
   }
+
+  /* WTS mobile header: independent, centered menu row beneath a clean utility row.
+     Keep the account/cart/search tap targets visible at narrow phone widths. */
+  @media screen and (max-width: 749px) {
+    #header-component { position: relative; overflow: visible; }
+    #header-component .header__row--top,
+    #header-component .header__row--top .header__columns { overflow: visible; }
+    #header-component .header__row--top .header__columns {
+      --header-template-columns: 44px minmax(0, 1fr) 88px;
+      grid-template-areas: "leftB center rightB";
+      grid-template-columns: 44px minmax(0, 1fr) 88px;
+      column-gap: 0;
+      padding-block: 7px 55px;
+      align-items: center;
+    }
+    #header-component .ws-header-brand.header-logo {
+      gap: 6px;
+      justify-self: center;
+      justify-content: center;
+      max-width: 100%;
+      width: max-content;
+      height: 44px;
+    }
+    #header-component .ws-header-brand__logo {
+      width: 37px;
+      height: 42px;
+      flex: 0 0 37px;
+    }
+    #header-component .ws-header-brand__wordmark {
+      font-size: 13px;
+      line-height: 0.98;
+      letter-spacing: 0.095em;
+    }
+    #header-component .ws-header-brand__wordmark span:last-child {
+      font-size: 10px;
+      letter-spacing: 0.13em;
+    }
+    #header-component .header__row--top .search-action {
+      grid-area: leftB;
+      justify-self: start;
+      margin: 0;
+      min-width: 44px;
+    }
+    #header-component .header__row--top header-actions {
+      grid-area: rightB;
+      justify-self: end;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      min-width: 88px;
+      gap: 0;
+      margin: 0;
+      white-space: nowrap;
+    }
+    #header-component .ws-draft-mobile-navigation {
+      display: block;
+      position: absolute;
+      left: 50%;
+      bottom: 8px;
+      top: auto;
+      right: auto;
+      transform: translateX(-50%);
+      margin: 0;
+      z-index: 120;
+    }
+    #header-component .ws-draft-mobile-navigation > summary {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      min-width: 136px;
+      min-height: 42px;
+      padding: 9px 20px;
+      text-align: center;
+      white-space: nowrap;
+      border: 1px solid rgba(224,192,137,.48);
+      background: #17130f;
+      color: #e0c089;
+    }
+    #header-component .ws-draft-mobile-navigation > summary:focus-visible {
+      outline: 2px solid #e0c089;
+      outline-offset: 2px;
+    }
+    #header-component .ws-draft-mobile-navigation nav {
+      position: absolute;
+      top: calc(100% + 7px);
+      left: 50%;
+      right: auto;
+      transform: translateX(-50%);
+      width: calc(100vw - 24px);
+      max-width: 430px;
+      max-height: min(70dvh, 560px);
+      overflow-x: hidden;
+      overflow-y: auto;
+      overscroll-behavior: contain;
+      background: #17130f;
+      border: 1px solid rgba(224,192,137,.48);
+      box-shadow: 0 16px 40px rgba(0,0,0,.65);
+    }
+    #header-component .ws-draft-mobile-navigation:not([open]) > nav {
+      display: none;
+    }
+    #header-component .ws-draft-mobile-navigation nav ul {
+      padding: 6px;
+      margin: 0;
+      list-style: none;
+    }
+    #header-component .ws-draft-mobile-navigation nav .menu-drawer__menu-item,
+    #header-component .ws-draft-mobile-navigation nav .ws-mobile-lifestyle summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 44px;
+      width: 100%;
+      padding: 12px 14px;
+      font-size: 14px;
+      color: #f6f1e7;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(224,192,137,.15);
+    }
+    #header-component .ws-draft-mobile-navigation nav .ws-mobile-lifestyle__links {
+      display: flex;
+      flex-direction: column;
+      padding: 3px 0 6px 15px;
+    }
+    #header-component .ws-draft-mobile-navigation nav .ws-mobile-lifestyle__links a {
+      display: block;
+      padding: 11px 15px;
+      color: #e0c089;
+      font-size: 13px;
+      text-decoration: none;
+    }
+  }
+  @media screen and (max-width: 355px) {
+    #header-component .ws-header-brand__logo {width: 31px; flex-basis: 31px;}
+    #header-component .ws-header-brand__wordmark {font-size: 11px;}
+    #header-component .ws-header-brand__wordmark span:last-child {font-size: 9px;}
+  }
+
 {% endstylesheet %}
 
 {% schema %}
