@@ -11,6 +11,15 @@
   {% endcase %}
 {% endif %}
 {{ 'ws-lifestyle.css' | asset_url | stylesheet_tag }}
+{% comment %} The Habitat mobile story image is a portrait: never force 16:9 cropping. {% endcomment %}
+<style>
+@media (max-width: 600px) {
+  .ws-lifestyle-page .ws-lifestyle-page__story img {
+    display:block; width:100%; height:auto;
+    aspect-ratio:3 / 4; object-fit:contain; object-position:center;
+  }
+}
+</style>
 <section class="ws-lifestyle-page" {{ section.shopify_attributes }}>
   <div class="ws-lifestyle-page__header">
     <p>Whitetail Syndicate · Lifestyle Videos</p>
