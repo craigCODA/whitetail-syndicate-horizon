@@ -1,0 +1,25 @@
+{% render 'ws-home-styles' %}
+{{ 'ws-lifestyle.css' | asset_url | stylesheet_tag }}
+{% assign ws_lifestyle_image = 'https://cdn.shopify.com/s/files/1/0689/1087/4727/files/lifestyle_and_video.png?v=1788601387' %}
+<section id="lifestyle" class="ws-lifestyle-videos" aria-label="Lifestyle Videos" {{ section.shopify_attributes }} style="--ws-lifestyle-artwork: url('{{ ws_lifestyle_image }}');">
+  <div class="ws-lifestyle-videos__graphic">
+    <img class="ws-lifestyle-videos__image" src="{{ ws_lifestyle_image }}" alt="Whitetail Syndicate Lifestyle Videos featuring Hunts, Food Plots, Products, Scouting and Habitat" width="1672" height="941" loading="lazy">
+    <a class="ws-lifestyle-videos__watch" href="/pages/lifestyle" aria-label="Browse Lifestyle Videos"><span class="visually-hidden">Browse Lifestyle Videos</span></a>
+    <a class="ws-lifestyle-videos__hotspot" href="/pages/hunts" aria-label="Open Hunts page" style="--x:2.272727%;--y:74.601488%;--w:18.122010%;--h:19.022317%;--bg-x:2.77575%;--bg-y:92.12598%;--bg-w:551.81518%;--bg-h:525.69832%;"><span class="ws-lifestyle-videos__zoom" aria-hidden="true"></span><span class="visually-hidden">Hunts</span></a>
+    <a class="ws-lifestyle-videos__hotspot" href="/pages/food-plots" aria-label="Open Food Plots page" style="--x:21.291866%;--y:74.601488%;--w:18.122010%;--h:19.022317%;--bg-x:26.00438%;--bg-y:92.12598%;--bg-w:551.81518%;--bg-h:525.69832%;"><span class="ws-lifestyle-videos__zoom" aria-hidden="true"></span><span class="visually-hidden">Food Plots</span></a>
+    <a class="ws-lifestyle-videos__hotspot" href="/pages/products" aria-label="Open Products page" style="--x:40.311005%;--y:74.601488%;--w:18.002392%;--h:19.022317%;--bg-x:49.16120%;--bg-y:92.12598%;--bg-w:555.48173%;--bg-h:525.69832%;"><span class="ws-lifestyle-videos__zoom" aria-hidden="true"></span><span class="visually-hidden">Products</span></a>
+    <a class="ws-lifestyle-videos__hotspot" href="/pages/scouting" aria-label="Open Scouting page" style="--x:59.150718%;--y:74.601488%;--w:18.241627%;--h:19.022317%;--bg-x:72.34821%;--bg-y:92.12598%;--bg-w:548.19672%;--bg-h:525.69832%;"><span class="ws-lifestyle-videos__zoom" aria-hidden="true"></span><span class="visually-hidden">Scouting</span></a>
+    <a class="ws-lifestyle-videos__hotspot" href="/pages/habitat" aria-label="Open Habitat page" style="--x:78.229665%;--y:74.601488%;--w:18.062201%;--h:19.022317%;--bg-x:95.47445%;--bg-y:92.12598%;--bg-w:553.64238%;--bg-h:525.69832%;"><span class="ws-lifestyle-videos__zoom" aria-hidden="true"></span><span class="visually-hidden">Habitat</span></a>
+  </div>
+  <nav class="ws-lifestyle-videos__mobile" aria-label="Lifestyle categories">
+    <a href="/pages/lifestyle">Watch Videos</a>
+    <a href="/pages/hunts">Hunts</a>
+    <a href="/pages/food-plots">Food Plots</a>
+    <a href="/pages/products">Products</a>
+    <a href="/pages/scouting">Scouting</a>
+    <a href="/pages/habitat">Habitat</a>
+  </nav>
+</section>
+{% schema %}
+{"name":"WS Lifestyle Videos","tag":"section","class":"ws-lifestyle-section","disabled_on":{"groups":["header","footer"]},"settings":[],"presets":[{"name":"WS Lifestyle Videos"}]}
+{% endschema %}
