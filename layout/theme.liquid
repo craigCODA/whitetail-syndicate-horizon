@@ -29,6 +29,7 @@
     {% endif %}
 
     {{ content_for_header }}
+    {{ 'ws-header-navigation.css' | asset_url | stylesheet_tag }}
     <script src="{{ 'ws-signup-feedback.js' | asset_url }}" defer></script>
   </head>
 
