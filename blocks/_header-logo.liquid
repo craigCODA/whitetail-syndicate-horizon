@@ -19,6 +19,18 @@
     <span>SYNDICATE</span>
   </span>
 </a>
+<nav class="ws-draft-top-navigation" aria-label="Main navigation">
+  <ul class="ws-draft-top-navigation__list">
+    {% render 'ws-header-nav-desktop' %}
+  </ul>
+</nav>
+<details class="ws-draft-mobile-navigation">
+  <summary aria-label="Open Whitetail Syndicate navigation">Menu <span aria-hidden="true">▾</span></summary>
+  <nav aria-label="Mobile navigation">
+    <ul>{% render 'ws-header-nav-mobile' %}</ul>
+  </nav>
+</details>
+{{ 'ws-header-navigation.css' | asset_url | stylesheet_tag }}
 
 {% style %}
   @font-face {
@@ -98,6 +110,137 @@
   #header-component .header-menu .menu-list__link:hover,
   #header-component .header-menu .menu-list__link:focus-visible {
     color: #e0c089;
+  }
+  #header-component:has(.ws-draft-top-navigation) .header-menu,
+  #header-component:has(.ws-draft-top-navigation) .header__drawer {
+    display: none !important;
+  }
+  #header-component .ws-draft-top-navigation {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+    flex: 1 1 auto;
+    margin-left: clamp(25px, 7vw, 130px);
+    font: 600 12px/1.3 "WS Header Barlow", "Barlow", Arial, sans-serif;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+  }
+  #header-component .ws-draft-top-navigation__list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    gap: clamp(7px,1.1vw,18px);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  #header-component .ws-draft-top-navigation .menu-list__list-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    min-width: 0;
+    flex: 0 0 auto;
+  }
+  #header-component .ws-draft-top-navigation .menu-list__link {
+    display: flex;
+    align-items: center;
+    height: 46px;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #f6f1e7;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+    letter-spacing: inherit;
+    text-transform: uppercase;
+  }
+  #header-component .ws-draft-top-navigation .menu-list__link-title {padding:0;}
+  #header-component .ws-draft-top-navigation .ws-home-nav-link,
+  #header-component .ws-draft-top-navigation .menu-list__link:hover,
+  #header-component .ws-draft-top-navigation .menu-list__link:focus-visible {
+    color: #e0c089;
+  }
+  #header-component .ws-draft-top-navigation .ws-lifestyle-dropdown__trigger {
+    cursor: pointer;
+    list-style: none;
+  }
+  #header-component .ws-draft-top-navigation .ws-lifestyle-dropdown__trigger::-webkit-details-marker {display:none;}
+  #header-component .ws-draft-top-navigation .ws-lifestyle-dropdown__panel {
+    position: absolute;
+    top: 100%;
+    left: -8px;
+    z-index: 60;
+    display: none;
+    flex-direction: column;
+    min-width: 205px;
+    background: #17130f;
+    border: 1px solid rgba(224,192,137,.4);
+    box-shadow: 0 12px 32px rgba(0,0,0,.5);
+    padding: 8px;
+  }
+  #header-component .ws-draft-top-navigation .ws-lifestyle-dropdown[open] .ws-lifestyle-dropdown__panel,
+  #header-component .ws-draft-top-navigation .ws-lifestyle-dropdown:focus-within .ws-lifestyle-dropdown__panel,
+  #header-component .ws-draft-top-navigation .ws-lifestyle-dropdown:hover .ws-lifestyle-dropdown__panel {display:flex;}
+  #header-component .ws-draft-top-navigation .ws-lifestyle-dropdown__panel a {
+    color:#f6f1e7;
+    font:600 12px/1.3 "WS Header Barlow",Arial,sans-serif;
+    letter-spacing:.08em;
+    text-decoration:none;
+    padding:11px 12px;
+  }
+  #header-component .ws-draft-top-navigation .ws-lifestyle-dropdown__panel a:hover,
+  #header-component .ws-draft-top-navigation .ws-lifestyle-dropdown__panel a:focus-visible {
+    color:#e0c089;background:rgba(224,192,137,.12);
+  }
+  #header-component .ws-draft-mobile-navigation {display:none;position:relative;z-index:80;}
+  @media screen and (max-width:1350px) {
+    #header-component .ws-draft-top-navigation {display:none;}
+    #header-component .ws-draft-mobile-navigation {
+      display:block;
+      margin-inline-start: 14px;
+      font:600 12px/1.4 "WS Header Barlow",Arial,sans-serif;
+      text-transform:uppercase;
+      letter-spacing:.1em;
+    }
+    #header-component .ws-draft-mobile-navigation > summary {
+      list-style:none;cursor:pointer;
+      border:1px solid rgba(224,192,137,.45);
+      padding:10px 12px;
+      color:#e0c089;
+    }
+    #header-component .ws-draft-mobile-navigation > summary::-webkit-details-marker{display:none;}
+    #header-component .ws-draft-mobile-navigation nav {
+      position:absolute;
+      right:0;top:calc(100% + 8px);
+      width:min(330px,calc(100vw - 28px));
+      max-height:min(70vh,570px);
+      overflow-y:auto;
+      background:#17130f;
+      border:1px solid rgba(224,192,137,.45);
+      box-shadow:0 16px 40px rgba(0,0,0,.65);
+      z-index:90;
+    }
+    #header-component .ws-draft-mobile-navigation nav ul {
+      list-style:none;margin:0;padding:8px;
+    }
+    #header-component .ws-draft-mobile-navigation nav .menu-drawer__menu-item {
+      display:flex;
+      text-decoration:none;
+      color:#f6f1e7;
+      padding:13px 12px;
+      font-size:13px;
+      border-bottom:1px solid rgba(224,192,137,.12);
+    }
+    #header-component .ws-draft-mobile-navigation nav .ws-mobile-lifestyle__links a{
+      display:block;color:#e0c089;text-decoration:none;padding:11px 20px;
+    }
+    #header-component .ws-draft-mobile-navigation nav .ws-mobile-lifestyle summary {
+      display:block;color:#f6f1e7;padding:13px 12px;cursor:pointer;
+    }
   }
   @media screen and (min-width: 871px) and (max-width: 1100px) {
     .ws-header-brand__wordmark { display: none; }
