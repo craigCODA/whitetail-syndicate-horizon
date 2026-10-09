@@ -38,3 +38,15 @@
 .ws-lifestyle-page__story span span{color:#cfc4b4;}
 .ws-lifestyle-page__story em{font-style:normal;color:#e0c089;}
 @media(max-width:600px){.ws-lifestyle-page__story{grid-template-columns:1fr;}.ws-lifestyle-page__story img{aspect-ratio:16/9;}.ws-lifestyle-page__story>span{padding:20px;}}
+
+/* The Habitat story-card portrait should not crop Nathan or the buck on phones. */
+@media(max-width:600px) {
+ .ws-lifestyle-page__story img {
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:3 / 4;
+  object-fit:contain;
+  object-position:center;
+ }
+}
