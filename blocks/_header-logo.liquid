@@ -1,156 +1,97 @@
 
 
-{% liquid
-  assign block_settings = block.settings
-  assign use_inverse_logo = false
-
-  if section.settings.enable_transparent_header_home and template.name == 'index' and section.settings.home_inverse_logo == true
-    assign use_inverse_logo = true
-  elsif section.settings.enable_transparent_header_product and template.name == 'product' and section.settings.product_inverse_logo == true
-    assign use_inverse_logo = true
-  elsif section.settings.enable_transparent_header_collection and template.name == 'collection' and section.settings.collection_inverse_logo == true
-    assign use_inverse_logo = true
-  endif
-
-  if use_inverse_logo
-    if settings.logo_inverse != blank
-      assign inverse_logo = settings.logo_inverse
-    else
-      assign inverse_logo = settings.logo
-    endif
-  endif
-
-  assign alt_text_fallback = 'accessibility.home_logo_alt' | t: store_name: shop.name
-%}
-
-{% comment %}
-  Output all logo variants, use CSS to hide/show the appropriate one
-  based on the .header[transparent] selector
-{% endcomment %}
 <a
-  {% if template.name == 'index' and block_settings.hide_logo_on_home_page %}
-    data-hidden-on-home-page
-  {% endif %}
   href="{{ routes.root_url }}#top"
-  class="size-style spacing-style header-logo"
-  style="
-    {% render 'size-style', settings: block_settings %}
-    {% render 'spacing-style', settings: block_settings %}
-    --font-family: var(--font-body--family);
-    --font-style: var(--font-body--style);
-    --font-weight: 600;
-  "
+  class="header-logo ws-header-brand"
+  aria-label="Whitetail Syndicate home"
   {{ block.shopify_attributes }}
 >
-  {% liquid
-    assign logo_width = settings.logo_height | times: settings.logo.aspect_ratio | ceil
-    assign logo_width_mobile = settings.logo_height_mobile | times: settings.logo.aspect_ratio | ceil
-    assign inverse_logo_width = settings.logo_height | times: inverse_logo.aspect_ratio | ceil
-    assign inverse_logo_width_mobile = settings.logo_height_mobile | times: inverse_logo.aspect_ratio | ceil
-    assign logo_style = '--header-logo-image-width: ' | append: logo_width | append: 'px;' | append: '--header-logo-image-width-mobile: ' | append: logo_width_mobile | append: 'px; --header-logo-image-height: ' | append: settings.logo_height | append: 'px; --header-logo-image-height-mobile: ' | append: settings.logo_height_mobile | append: 'px;'
-    assign inverse_logo_style = '--header-logo-image-width: ' | append: inverse_logo_width | append: 'px;' | append: '--header-logo-image-width-mobile: ' | append: inverse_logo_width_mobile | append: 'px; --header-logo-image-height: ' | append: settings.logo_height | append: 'px; --header-logo-image-height-mobile: ' | append: settings.logo_height_mobile | append: 'px;'
-  %}
-
-  <span
-    {% if use_inverse_logo %}
-      class="header-logo__solid-header-image-container"
-    {% endif %}
-    data-testid="header-logo"
+  <img
+    class="ws-header-brand__logo"
+    src="{{ 'ws-story-brand.png' | asset_url }}"
+    alt=""
+    width="58"
+    height="62"
+    loading="eager"
   >
-    {% if settings.logo != blank %}
-    {% render 'image',
-      image: settings.logo,
-      class: 'header-logo__image',
-      height: settings.logo_height,
-      alt_text_fallback: alt_text_fallback,
-      text_fallback: shop.name,
-      style: logo_style
-    %}
-    {% else %}
-      <img
-        class="header-logo__image"
-        src="{{ 'ws-story-brand.png' | asset_url }}"
-        alt="Whitetail Syndicate"
-        width="64"
-        height="68"
-        loading="eager"
-        style="--header-logo-image-width: 64px; --header-logo-image-width-mobile: 48px; --header-logo-image-height: 68px; --header-logo-image-height-mobile: 50px;"
-      >
-    {% endif %}
+  <span class="ws-header-brand__wordmark" aria-hidden="true">
+    <span>WHITETAIL</span>
+    <span>SYNDICATE</span>
   </span>
-
-  {% if use_inverse_logo %}
-    <span
-      class="header-logo__transparent-header-image-container"
-      data-testid="header-logo-inverse"
-    >
-      {% render 'image',
-        image: inverse_logo,
-        class: 'header-logo__image',
-        height: settings.logo_height,
-        alt_text_fallback: alt_text_fallback,
-        text_fallback: shop.name,
-        style: inverse_logo_style
-      %}
-    </span>
-  {% endif %}
 </a>
 
+{% style %}
+  @font-face {
+    font-family: "WS Header Oswald";
+    src: url("{{ 'ws-oswald-500.woff2' | asset_url }}") format("woff2");
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+  }
+{% endstyle %}
+
 {% stylesheet %}
-  .header-logo {
-    display: flex;
-    height: 100%;
-    font-size: var(--font-size--md);
-    font-family: var(--font-family);
-    font-weight: var(--font-weight);
-    font-style: var(--font-style);
-    color: var(--color-foreground);
-    justify-content: center;
+  .ws-header-brand.header-logo {
+    display: inline-flex;
     align-items: center;
+    gap: 12px;
+    flex: 0 0 auto;
+    width: auto;
+    height: 100%;
+    min-width: 0;
+    max-width: none;
+    padding: 0;
     text-decoration: none;
-
-    &[data-hidden-on-home-page] {
-      display: none;
-
-      #header-component:is(
-          [sticky='always']:not([data-scroll-direction='none']),
-          [sticky='scroll-up'][data-scroll-direction='up']
-        )
-        & {
-        display: flex;
-      }
-    }
-
-    @media screen and (max-width: 749px) {
-      padding: 0;
-    }
-
-    @media screen and (min-width: 750px) {
-      flex-shrink: 0;
-    }
-
-    &:hover {
-      text-decoration: none;
-    }
+    white-space: nowrap;
+    color: #f6f1e7;
   }
-
-  .header-logo__image {
+  .ws-header-brand.header-logo:hover,
+  .ws-header-brand.header-logo:focus-visible {
+    text-decoration: none;
+    color: #f6f1e7;
+  }
+  .ws-header-brand__logo {
+    display: block;
+    width: 58px;
+    height: 62px;
+    max-width: none;
     object-fit: contain;
-    height: var(--header-logo-image-height-mobile);
-    width: var(--header-logo-image-width-mobile);
-
-    @media screen and (min-width: 750px) {
-      height: var(--header-logo-image-height);
-      width: var(--header-logo-image-width);
+    flex: 0 0 58px;
+  }
+  .ws-header-brand__wordmark {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    font-family: "WS Header Oswald", "Oswald", "Arial Narrow", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 0.96;
+    letter-spacing: 0.12em;
+  }
+  .ws-header-brand__wordmark span:last-child {
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    color: #e0c089;
+  }
+  @media screen and (min-width: 871px) and (max-width: 1100px) {
+    .ws-header-brand__wordmark { display: none; }
+  }
+  @media screen and (max-width: 870px) {
+    .ws-header-brand__logo {
+      width: 52px;
+      height: 56px;
+      flex-basis: 52px;
     }
+    .ws-header-brand__wordmark { font-size: 16px; }
+    .ws-header-brand__wordmark span:last-child { font-size: 11px; }
   }
-
-  .header-logo__solid-header-image-container {
-    display: var(--header-logo-display, block);
-  }
-
-  .header-logo__transparent-header-image-container {
-    display: var(--header-logo-inverse-display, none);
+  @media screen and (max-width: 570px) {
+    .ws-header-brand__logo {
+      width: 48px;
+      height: 52px;
+      flex-basis: 48px;
+    }
+    .ws-header-brand__wordmark { font-size: 14px; }
   }
 {% endstylesheet %}
 
