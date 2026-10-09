@@ -1,4 +1,15 @@
 {% render 'ws-home-styles' %}
+{% comment %} Keep the full 3:4 Nathan photograph visible in the mobile story selection. {% endcomment %}
+<style>
+@media (max-width: 570px) {
+  .ws-story .ws-story-tile__photo { height:auto; min-height:0; aspect-ratio:3 / 4; }
+  .ws-story .ws-story-tile__img {
+    display:block; width:100%; height:auto; aspect-ratio:3 / 4;
+    object-fit:contain; object-position:center;
+  }
+  .ws-story .ws-story-tile:hover .ws-story-tile__img { transform:none; }
+}
+</style>
 
 <section class="ws-story" id="stories" {{ section.shopify_attributes }}>
   {% if section.settings.kicker != blank %}
