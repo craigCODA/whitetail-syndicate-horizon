@@ -624,3 +624,21 @@
   .ws-extra-collections .ws-section { padding: 8px 16px 48px; }
   .ws-extra-collections__grid { grid-template-columns: 1fr; }
 }
+
+/* On phones keep the complete Nathan story photograph in its original 3:4 ratio. */
+@media(max-width:570px) {
+  .ws-story-tile__photo {
+    height:auto;
+    min-height:0;
+    aspect-ratio:3 / 4;
+  }
+  .ws-story-tile__img {
+    display:block;
+    width:100%;
+    height:auto;
+    aspect-ratio:3 / 4;
+    object-fit:contain;
+    object-position:center;
+  }
+  .ws-story-tile:hover .ws-story-tile__img {transform:none}
+}
