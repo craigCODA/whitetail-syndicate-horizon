@@ -10,24 +10,53 @@
   if collection.handle == 'all'
     assign is_full_catalog = true
   endif
-  assign artwork_alt = collection.image.alt | default: collection.title
-%}
+
+  assign artwork_url = blank
+  assign artwork_width = 1374
+  assign artwork_height = 1145
+  case collection.handle
+    when 'the-buck-collection'
+      assign artwork_url = 'ws-line-buck-live.png' | asset_url
+    when 'the-doe-collection'
+      assign artwork_url = 'ws-line-doe-live.png' | asset_url
+      assign artwork_width = 1375
+      assign artwork_height = 1144
+    when 'the-yearling-collection'
+      assign artwork_url = 'ws-line-yearling-live.png' | asset_url
+    when 'the-fawn-collection'
+      assign artwork_url = 'ws-line-fawn-live.png' | asset_url
+      assign artwork_width = 1375
+      assign artwork_height = 1144
+    when 'hats-beanies'
+      assign artwork_url = 'ws-collection-hats-beanies-2026.png' | file_url
+      assign artwork_width = 1374
+      assign artwork_height = 1145
+    when 'gear-accessories'
+      assign artwork_url = 'ws-collection-gear-accessories-2026.png' | file_url
+      assign artwork_width = 1374
+      assign artwork_height = 1145
+    when 'rutline'
+      assign artwork_url = 'ws-rutline-full.png' | asset_url
+      assign artwork_width = 1254
+      assign artwork_height = 1254
+  endcase
+%>
 
 <section class="ws-collection-hero{% if is_full_catalog %} ws-collection-hero--all{% endif %}" aria-labelledby="ws-collection-title" {{ section.shopify_attributes }}>
-  {% if collection.image != blank and section.settings.show_artwork %}
+  {% if artwork_url != blank and section.settings.show_artwork %}
     <div
       class="ws-collection-hero__artwork"
-      style="--ws-collection-artwork: url('{{ collection.image | image_url: width: 2000 }}');"
+      style="--ws-collection-artwork: url('{{ artwork_url }}');"
     >
-      {{ collection.image
-        | image_url: width: 1800
-        | image_tag:
-          class: 'ws-collection-hero__image',
-          widths: '480, 720, 1000, 1400, 1800',
-          sizes: '(min-width: 750px) 700px, 95vw',
-          alt: artwork_alt,
-          loading: 'eager'
-      }}
+      <img
+        class="ws-collection-hero__image"
+        src="{{ artwork_url }}"
+        alt="{{ collection.title | escape }}"
+        width="{{ artwork_width }}"
+        height="{{ artwork_height }}"
+        loading="eager"
+        decoding="async"
+      >
     </div>
   {% endif %}
 
