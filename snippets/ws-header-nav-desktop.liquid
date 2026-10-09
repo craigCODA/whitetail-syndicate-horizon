@@ -1,0 +1,32 @@
+{% doc %} Whitetail's fixed draft-only seven-item header menu. {% enddoc %}
+<li class="menu-list__list-item">
+  <a class="menu-list__link ws-home-nav-link" href="{{ routes.root_url }}#top" ref="menuitem" data-skip-node-update="true"><span class="menu-list__link-title">Home</span></a>
+</li>
+<li class="menu-list__list-item">
+  <a class="menu-list__link" href="{{ routes.root_url }}#lines" ref="menuitem" data-skip-node-update="true"><span class="menu-list__link-title">Collections</span></a>
+</li>
+<li class="menu-list__list-item">
+  <a class="menu-list__link" href="{{ routes.root_url }}#shop" ref="menuitem" data-skip-node-update="true"><span class="menu-list__link-title">Shop</span></a>
+</li>
+<li class="menu-list__list-item ws-lifestyle-menu-item">
+  <details class="ws-lifestyle-dropdown">
+    <summary class="menu-list__link ws-lifestyle-dropdown__trigger" aria-label="Open Lifestyle pages" ref="menuitem"> <span class="menu-list__link-title">Lifestyle <span class="ws-nav-caret" aria-hidden="true">▾</span></span></summary>
+    <div class="ws-lifestyle-dropdown__panel">
+      <a href="/pages/lifestyle">All Lifestyle Videos</a>
+      <a href="/pages/hunts">Hunts</a>
+      <a href="/pages/food-plots">Food Plots</a>
+      <a href="/pages/products">Products</a>
+      <a href="/pages/scouting">Scouting</a>
+      <a href="/pages/habitat">Habitat</a>
+    </div>
+  </details>
+</li>
+<li class="menu-list__list-item">
+  <a class="menu-list__link" href="/pages/habitat" ref="menuitem" data-skip-node-update="true"><span class="menu-list__link-title">Stories</span></a>
+</li>
+<li class="menu-list__list-item">
+  <a class="menu-list__link" href="/pages/our-story" ref="menuitem" data-skip-node-update="true"><span class="menu-list__link-title">Our Story</span></a>
+</li>
+<li class="menu-list__list-item">
+  <a class="menu-list__link" href="{{ routes.root_url }}#rut" ref="menuitem" data-skip-node-update="true"><span class="menu-list__link-title">The Rut Line</span></a>
+</li>
