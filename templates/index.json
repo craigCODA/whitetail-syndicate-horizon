@@ -163,6 +163,10 @@
         "description": "New hunting stories and updates from Whitetail Syndicate.",
         "button": "Sign up"
       }
+    },
+    "ws_lifestyle": {
+      "type": "ws-lifestyle-videos",
+      "settings": {}
     }
   },
   "order": [
@@ -171,6 +175,7 @@
     "ws_extra_collections",
     "ws_rut",
     "ws_shop",
+    "ws_lifestyle",
     "ws_story",
     "ws_share",
     "ws_join"
