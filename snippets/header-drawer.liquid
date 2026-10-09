@@ -114,6 +114,9 @@
           class="menu-drawer__menu has-submenu"
           role="list"
         >
+          {% if block_settings.ws_custom_navigation %}
+            {% render 'ws-header-nav-mobile' %}
+          {% else %}
           {% if ws_show_home_link and ws_has_collections_link == false %}
               <li class="menu-drawer__list-item--flat" style="--menu-drawer-animation-index: 0;">
                 <a href="{{ routes.root_url }}#top" class="menu-drawer__menu-item menu-drawer__menu-item--mainlist menu-drawer__animated-element">
@@ -620,6 +623,7 @@
                 {%- endif -%}
               </li>
             {%- endfor -%}
+          {% endif %}
           {% endif %}
         </ul>
       </nav>
