@@ -1,6 +1,6 @@
 {% comment %}
   Whitetail Syndicate collection masthead.
-  Uses each Shopify collection's own art without overlaying headings or cropping its wording.
+  Uses the approved cleaned collection images; preserves the homepage artwork separately.
   Shared by /collections/all, category collections and paginated collection URLs.
 {% endcomment %}
 {{ 'ws-collection-hero.css' | asset_url | stylesheet_tag }}
@@ -15,24 +15,28 @@
   assign artwork_width = 1374
   assign artwork_height = 1145
   case collection.handle
+    when 'all'
+      assign artwork_url = 'https://cdn.shopify.com/s/files/1/0689/1087/4727/files/ws-catalog-six-panel-header.png?v=1791518554'
+      assign artwork_width = 2172
+      assign artwork_height = 724
     when 'the-buck-collection'
-      assign artwork_url = 'ws-line-buck-live.png' | asset_url
+      assign artwork_url = 'https://cdn.shopify.com/s/files/1/0689/1087/4727/files/ws-collection-clean-buck.png?v=1791518489'
     when 'the-doe-collection'
-      assign artwork_url = 'ws-line-doe-live.png' | asset_url
+      assign artwork_url = 'https://cdn.shopify.com/s/files/1/0689/1087/4727/files/ws-collection-clean-doe.png?v=1791518497'
       assign artwork_width = 1375
       assign artwork_height = 1144
     when 'the-yearling-collection'
-      assign artwork_url = 'ws-line-yearling-live.png' | asset_url
+      assign artwork_url = 'https://cdn.shopify.com/s/files/1/0689/1087/4727/files/ws-collection-clean-yearling.png?v=1791518512'
     when 'the-fawn-collection'
-      assign artwork_url = 'ws-line-fawn-live.png' | asset_url
+      assign artwork_url = 'https://cdn.shopify.com/s/files/1/0689/1087/4727/files/ws-collection-clean-fawn.png?v=1791518530'
       assign artwork_width = 1375
       assign artwork_height = 1144
     when 'hats-beanies'
-      assign artwork_url = 'ws-collection-hats-beanies-2026.png' | file_url
+      assign artwork_url = 'https://cdn.shopify.com/s/files/1/0689/1087/4727/files/ws-collection-clean-hats-beanies.png?v=1791518536'
       assign artwork_width = 1374
       assign artwork_height = 1145
     when 'gear-accessories'
-      assign artwork_url = 'ws-collection-gear-accessories-2026.png' | file_url
+      assign artwork_url = 'https://cdn.shopify.com/s/files/1/0689/1087/4727/files/ws-collection-clean-gear-accessories.png?v=1791518544'
       assign artwork_width = 1374
       assign artwork_height = 1145
     when 'rutline'
