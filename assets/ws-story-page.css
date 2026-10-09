@@ -333,3 +333,43 @@
 @media(min-width:821px){
   .ws-story-page .hero::before{-webkit-mask-image:linear-gradient(90deg,transparent 36%,#000 75%);mask-image:linear-gradient(90deg,transparent 36%,#000 75%)}
 }
+
+/* Full original Nathan portrait on phones; never crop his trophy photograph.
+   The desktop cinematic hero background remains unchanged. */
+.ws-story-page .ws-story-page__mobile-photo {display:none}
+@media (max-width:620px) {
+  .ws-story-page .hero {
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+    min-height:0;
+    height:auto;
+  }
+  .ws-story-page .hero::before,
+  .ws-story-page .hero::after {display:none}
+  .ws-story-page .ws-story-page__mobile-photo {
+    display:block;
+    position:relative;
+    width:100%;
+    height:auto;
+    max-width:100%;
+    object-fit:contain;
+    object-position:center;
+    flex:0 0 auto;
+  }
+  .ws-story-page .hero-inner {
+    position:relative;
+    z-index:1;
+    width:100%;
+    padding:30px 20px 38px;
+    background:linear-gradient(180deg,#1c1913,#100f0d);
+  }
+  .ws-story-page .hero h1 {
+    font-size:clamp(2.7rem,11vw,4.8rem);
+    line-height:1.02;
+  }
+  .ws-story-page .hero .brand-mark {
+    left:1rem;
+    top:1rem;
+  }
+}
