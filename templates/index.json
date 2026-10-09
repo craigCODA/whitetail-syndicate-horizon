@@ -16,7 +16,16 @@
         "link_1_label": "The collections",
         "link_1_url": "/#lines",
         "link_2_label": "Share a hunt",
-        "link_2_url": "/#share"
+        "link_2_url": "/#share",
+        "show_field_notes": true,
+        "field_notes_title": "From the Field",
+        "field_notes_lead": "Notes from the woods, the community, and the Syndicate.",
+        "field_notes_first_title": "Hunting calendar",
+        "field_notes_first_text": "Season dates and important reminders, verified before posting.",
+        "field_notes_second_title": "Community events",
+        "field_notes_second_text": "Local hunts, gatherings, shows and club events.",
+        "field_notes_third_title": "Syndicate updates",
+        "field_notes_third_text": "New stories, brand news, and what's coming next."
       }
     },
     "ws_lines": {
