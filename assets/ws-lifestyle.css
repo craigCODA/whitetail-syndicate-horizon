@@ -1,0 +1,40 @@
+.ws-lifestyle-videos{width:100%;background:#050404;color:#f6f1e7;border-block:1px solid rgba(224,192,137,.25);}
+.ws-lifestyle-videos__graphic{position:relative;width:100%;overflow:visible;isolation:isolate;line-height:0;}
+.ws-lifestyle-videos__image{display:block;width:100%;height:auto;aspect-ratio:1672/941;object-fit:contain;}
+.ws-lifestyle-videos__hotspot{position:absolute;left:var(--x);top:var(--y);width:var(--w);height:var(--h);z-index:2;display:block;cursor:pointer;outline-offset:3px;}
+.ws-lifestyle-videos__zoom{position:absolute;inset:0;opacity:0;background-image:var(--ws-lifestyle-artwork);background-size:var(--bg-w) var(--bg-h);background-position:var(--bg-x) var(--bg-y);transform:scale(1);transition:transform .2s ease,opacity .16s ease,box-shadow .2s ease;pointer-events:none;}
+.ws-lifestyle-videos__hotspot:hover,.ws-lifestyle-videos__hotspot:focus-visible{z-index:5;}
+.ws-lifestyle-videos__hotspot:hover .ws-lifestyle-videos__zoom,.ws-lifestyle-videos__hotspot:focus-visible .ws-lifestyle-videos__zoom{opacity:1;transform:scale(1.065);box-shadow:0 0 0 2px #e0c089,0 14px 30px rgba(0,0,0,.8);}
+.ws-lifestyle-videos__watch{position:absolute;z-index:3;left:39%;top:48%;width:22%;height:22%;cursor:pointer;}
+.ws-lifestyle-videos__watch:hover,.ws-lifestyle-videos__watch:focus-visible{outline:2px solid rgba(224,192,137,.7);outline-offset:-3px;}
+.ws-lifestyle-videos__mobile{display:none;}
+@media(max-width:700px){
+ .ws-lifestyle-videos__hotspot{display:none;}
+ .ws-lifestyle-videos__mobile{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:14px 12px 20px;}
+ .ws-lifestyle-videos__mobile a{padding:12px 8px;text-align:center;color:#f6f1e7;border:1px solid rgba(224,192,137,.38);text-decoration:none;font-size:12px;letter-spacing:.1em;text-transform:uppercase;}
+ .ws-lifestyle-videos__mobile a:hover,.ws-lifestyle-videos__mobile a:focus-visible{color:#e0c089;border-color:#e0c089;}
+}
+@media(prefers-reduced-motion:reduce){.ws-lifestyle-videos__zoom{transition:none;}}
+
+.ws-lifestyle-page{background:#0e0d0b;color:#f6f1e7;min-height:68vh;padding:0 0 85px;}
+.ws-lifestyle-page__header{background:linear-gradient(100deg,rgba(12,10,7,.75),rgba(12,10,7,.91)),url("https://cdn.shopify.com/s/files/1/0689/1087/4727/files/lifestyle_and_video.png?v=1788601387") center 44%/cover;padding:clamp(58px,8vw,100px) max(22px,6vw);border-bottom:1px solid rgba(224,192,137,.3);}
+.ws-lifestyle-page__header p{font-size:12px;text-transform:uppercase;letter-spacing:.24em;color:#e0c089;}
+.ws-lifestyle-page__header h1{margin:8px 0 25px;font-size:clamp(42px,7vw,92px);letter-spacing:.03em;text-transform:uppercase;line-height:1.05;font-family:"Oswald","Arial Narrow",Arial,sans-serif;}
+.ws-lifestyle-page__header a,.ws-lifestyle-page__content a{color:#e0c089;text-decoration:none;}
+.ws-lifestyle-page__categories,.ws-lifestyle-page__content{max-width:1400px;margin:0 auto;padding:40px max(18px,4vw);}
+.ws-lifestyle-page__categories{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;}
+.ws-lifestyle-page__categories a{display:flex;flex-direction:column;gap:30px;padding:30px 23px;border:1px solid rgba(224,192,137,.3);background:#1b1712;text-decoration:none;color:#f6f1e7;}
+.ws-lifestyle-page__categories a:hover{border-color:#e0c089;transform:translateY(-2px);}
+.ws-lifestyle-page__categories a span:last-child{color:#e0c089;font-size:13px;}
+.ws-lifestyle-page__category-name{font:500 28px "Oswald",Arial,sans-serif;text-transform:uppercase;}
+.ws-lifestyle-page__content h2{font:500 clamp(28px,4vw,46px) "Oswald",Arial,sans-serif;text-transform:uppercase;}
+.ws-lifestyle-page__content p{font-size:17px;color:#cfc4b4;line-height:1.55;}
+.ws-lifestyle-page__story{display:grid;grid-template-columns:minmax(140px,280px) minmax(0,1fr);gap:24px;max-width:900px;background:#1b1712;border:1px solid rgba(224,192,137,.3);color:#f6f1e7!important;text-decoration:none;}
+.ws-lifestyle-page__story:hover{border-color:#e0c089;}
+.ws-lifestyle-page__story img{width:100%;height:100%;object-fit:cover;}
+.ws-lifestyle-page__story>span{display:flex;flex-direction:column;justify-content:center;gap:13px;padding:22px;}
+.ws-lifestyle-page__story small{color:#e0c089;font-size:12px;}
+.ws-lifestyle-page__story strong{font:500 clamp(28px,4vw,52px) "Oswald",Arial,sans-serif;text-transform:uppercase;}
+.ws-lifestyle-page__story span span{color:#cfc4b4;}
+.ws-lifestyle-page__story em{font-style:normal;color:#e0c089;}
+@media(max-width:600px){.ws-lifestyle-page__story{grid-template-columns:1fr;}.ws-lifestyle-page__story img{aspect-ratio:16/9;}.ws-lifestyle-page__story>span{padding:20px;}}
