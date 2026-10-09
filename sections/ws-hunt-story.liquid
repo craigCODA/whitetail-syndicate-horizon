@@ -1,7 +1,9 @@
 {% render 'ws-home-styles' %}
 {{ 'ws-story-page.css' | asset_url | stylesheet_tag }}
 <article class="ws-story-page" style="--ws-story-hero: url('{{ 'ws-story-nathan-photo.jpg' | asset_url }}');" {{ section.shopify_attributes }}>
-<header class="hero"><nav aria-label="Story navigation" class="ws-story-return"><a href="/#stories">← Back to stories</a></nav>
+<header class="hero">
+<img class="ws-story-page__mobile-photo" src="{{ 'ws-story-nathan-photo.jpg' | asset_url }}" alt="Nathan Deville with his eight-point buck" width="1152" height="1536" loading="eager">
+<nav aria-label="Story navigation" class="ws-story-return"><a href="/#stories">← Back to stories</a></nav>
 <div aria-label="Whitetail Syndicate" class="brand-mark">
 <img alt="Whitetail Syndicate — Where the Rut Leads" height="950" loading="lazy" src="{{ 'ws-story-brand.png' | asset_url }}" width="900"/>
 </div>
