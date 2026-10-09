@@ -115,9 +115,6 @@
     %}
 
     {% capture children %}
-      {% if block_settings.ws_custom_navigation %}
-        {% render 'ws-header-nav-desktop' %}
-      {% else %}
       {% if ws_show_home_link and ws_has_collections_link == false %}
         <li class="menu-list__list-item">
           <a href="{{ routes.root_url }}#top" data-skip-node-update="true" class="menu-list__link" ref="menuitem">
@@ -209,7 +206,6 @@
           {%- endif -%}
         </li>
       {% endfor %}
-      {% endif %}
       <li
         class="menu-list__list-item"
         slot="more"
@@ -1070,12 +1066,6 @@
       "type": "checkbox",
       "id": "navigation_bar",
       "label": "t:settings.navigation_bar"
-    },
-    {
-      "type": "checkbox",
-      "id": "ws_custom_navigation",
-      "label": "Use Whitetail header navigation",
-      "default": false
     },
     {
       "type": "color",

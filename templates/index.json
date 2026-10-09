@@ -115,9 +115,7 @@
         "lead": "The early mornings. The seasons of patience. The person who first took you, and the one you take now. A miss counts. A season that ends with until next year counts.",
         "link_label": "Share your hunt",
         "link": "/#share"
-      },
-      "blocks": {},
-      "block_order": []
+      }
     },
     "ws_share": {
       "type": "ws-share",

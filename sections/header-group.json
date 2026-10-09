@@ -61,7 +61,6 @@
           "static": true,
           "settings": {
             "menu": "main-menu",
-            "ws_custom_navigation": true,
             "background_color": "#0a0a0a",
             "text_color": "#ffffff",
             "type_font_primary_size": "0.875rem",
