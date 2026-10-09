@@ -1,0 +1,47 @@
+{% assign category = section.settings.category | default: 'lifestyle' %}
+{% assign headline = section.settings.heading %}
+{% if headline == blank %}
+  {% case category %}
+    {% when 'food-plots' %}{% assign headline = 'Food Plots' %}
+    {% when 'hunts' %}{% assign headline = 'Hunts' %}
+    {% when 'products' %}{% assign headline = 'Products' %}
+    {% when 'scouting' %}{% assign headline = 'Scouting' %}
+    {% when 'habitat' %}{% assign headline = 'Habitat' %}
+    {% else %}{% assign headline = 'Lifestyle Videos' %}
+  {% endcase %}
+{% endif %}
+{{ 'ws-lifestyle.css' | asset_url | stylesheet_tag }}
+<section class="ws-lifestyle-page" {{ section.shopify_attributes }}>
+  <div class="ws-lifestyle-page__header">
+    <p>Whitetail Syndicate · Lifestyle Videos</p>
+    <h1>{{ headline | escape }}</h1>
+    <a href="{{ routes.root_url }}#lifestyle">← Back to Lifestyle Videos</a>
+  </div>
+  {% if category == 'lifestyle' %}
+    <div class="ws-lifestyle-page__categories">
+      <a href="/pages/hunts"><span class="ws-lifestyle-page__category-name">Hunts</span><span>Explore →</span></a>
+      <a href="/pages/food-plots"><span class="ws-lifestyle-page__category-name">Food Plots</span><span>Explore →</span></a>
+      <a href="/pages/products"><span class="ws-lifestyle-page__category-name">Products</span><span>Explore →</span></a>
+      <a href="/pages/scouting"><span class="ws-lifestyle-page__category-name">Scouting</span><span>Explore →</span></a>
+      <a href="/pages/habitat"><span class="ws-lifestyle-page__category-name">Habitat</span><span>Explore →</span></a>
+    </div>
+  {% elsif category == 'habitat' %}
+    <div class="ws-lifestyle-page__content">
+      <h2>Featured stories</h2>
+      <a href="/pages/wait-till-he-turns" class="ws-lifestyle-page__story">
+        <img src="{{ 'ws-story-nathan-photo.jpg' | asset_url }}" alt="Nathan Deville with his eight-point buck" width="280" height="360" loading="lazy">
+        <span><small>Nathan Deville · November 8, 2025</small><strong>Wait Till He Turns</strong><span>They went to fill feeders. Nathan brought the .35 Whelen anyway.</span><em>Read the story →</em></span>
+      </a>
+      <p>More hunter stories will be added as they are reviewed and approved.</p>
+    </div>
+  {% else %}
+    <div class="ws-lifestyle-page__content">
+      <h2>{{ headline | escape }}</h2>
+      <p>Whitetail Syndicate videos in this category will be added as the footage is ready and approved.</p>
+      <p><a href="https://www.youtube.com/@thewhitetailsyndicate" rel="noopener">Whitetail Syndicate on YouTube</a></p>
+    </div>
+  {% endif %}
+</section>
+{% schema %}
+{"name":"WS Lifestyle page","tag":"section","class":"ws-lifestyle-page-section","settings":[{"type":"select","id":"category","label":"Lifestyle page","options":[{"value":"lifestyle","label":"Overview"},{"value":"hunts","label":"Hunts"},{"value":"food-plots","label":"Food Plots"},{"value":"products","label":"Products"},{"value":"scouting","label":"Scouting"},{"value":"habitat","label":"Habitat"}],"default":"lifestyle"},{"type":"text","id":"heading","label":"Optional custom page heading"}],"presets":[{"name":"WS Lifestyle page"}]}
+{% endschema %}
