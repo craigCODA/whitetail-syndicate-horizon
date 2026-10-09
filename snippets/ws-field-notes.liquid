@@ -1,0 +1,37 @@
+{% doc %}
+  Editorial hunting updates panel beside the homepage introduction.
+  @param {object} notes - Theme editor settings for the homepage hero.
+{% enddoc %}
+{% if notes.show_field_notes %}
+  <aside class="ws-field-notes" aria-labelledby="ws-field-notes-heading">
+    <div class="ws-field-notes__header">
+      <span class="ws-field-notes__eyebrow">WHITETAIL SYNDICATE</span>
+      <h2 id="ws-field-notes-heading">{{ notes.field_notes_title | escape }}</h2>
+      <p>{{ notes.field_notes_lead | escape }}</p>
+    </div>
+    <div class="ws-field-notes__entries">
+      <article class="ws-field-notes__entry">
+        <span class="ws-field-notes__number" aria-hidden="true">01</span>
+        <div>
+          <h3>{{ notes.field_notes_first_title | escape }}</h3>
+          <p>{{ notes.field_notes_first_text | escape }}</p>
+        </div>
+      </article>
+      <article class="ws-field-notes__entry">
+        <span class="ws-field-notes__number" aria-hidden="true">02</span>
+        <div>
+          <h3>{{ notes.field_notes_second_title | escape }}</h3>
+          <p>{{ notes.field_notes_second_text | escape }}</p>
+        </div>
+      </article>
+      <article class="ws-field-notes__entry">
+        <span class="ws-field-notes__number" aria-hidden="true">03</span>
+        <div>
+          <h3>{{ notes.field_notes_third_title | escape }}</h3>
+          <p>{{ notes.field_notes_third_text | escape }}</p>
+        </div>
+      </article>
+    </div>
+    <a class="ws-field-notes__action" href="{{ routes.root_url }}#join">Get the updates <span aria-hidden="true">→</span></a>
+  </aside>
+{% endif %}
