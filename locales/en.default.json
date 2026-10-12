@@ -8,6 +8,13 @@
  * ------------------------------------------------------------
  */
 {
+  "ws_home_story": {
+    "featured": "Featured story",
+    "author": "Nathan Deville",
+    "summary": "They went to fill feeders. Nathan brought the .35 Whelen anyway.",
+    "read_story": "Read the story",
+    "photo_alt": "Nathan Deville with his eight-point buck"
+  },
   "accessibility": {
     "account": "Account",
     "active_filters": "Active filters:",

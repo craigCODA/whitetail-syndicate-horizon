@@ -19,15 +19,32 @@
       width="2073" height="758" loading="eager" fetchpriority="high">
   {% endif %}
   <div class="ws-hero__follow">
-    <p>{{ section.settings.statement | escape | newline_to_br }}</p>
-    <div class="ws-hero__links">
-      {% if section.settings.link_1_label != blank and section.settings.link_1_url != blank %}
-        <a href="{{ section.settings.link_1_url }}">{{ section.settings.link_1_label | escape }}</a>
-      {% endif %}
-      {% if section.settings.link_2_label != blank and section.settings.link_2_url != blank %}
-        <a href="{{ section.settings.link_2_url }}">{{ section.settings.link_2_label | escape }}</a>
-      {% endif %}
+    <div class="ws-hero__intro">
+      <p class="ws-hero__statement">{{ section.settings.statement | escape | newline_to_br }}</p>
+      <div class="ws-hero__links">
+        {% if section.settings.link_1_label != blank and section.settings.link_1_url != blank %}
+          <a href="{{ section.settings.link_1_url }}">{{ section.settings.link_1_label | escape }}</a>
+        {% endif %}
+        {% if section.settings.link_2_label != blank and section.settings.link_2_url != blank %}
+          <a href="{{ section.settings.link_2_url }}">{{ section.settings.link_2_label | escape }}</a>
+        {% endif %}
+      </div>
     </div>
+    {% assign featured_story = pages['wait-till-he-turns'] %}
+    {% if section.settings.show_featured_story and featured_story != blank %}
+      <a class="ws-hero-story" href="{{ featured_story.url }}" aria-labelledby="WsHeroStory-{{ section.id }}">
+        <img class="ws-hero-story__photo" src="{{ 'ws-story-nathan-photo.jpg' | asset_url }}"
+          alt="{{ 'ws_home_story.photo_alt' | t | escape }}"
+          width="1152" height="1536" loading="lazy">
+        <div class="ws-hero-story__copy">
+          <p class="ws-hero-story__eyebrow">{{ 'ws_home_story.featured' | t }}</p>
+          <h2 id="WsHeroStory-{{ section.id }}">{{ featured_story.title | escape }}</h2>
+          <p class="ws-hero-story__author">{{ 'ws_home_story.author' | t }}</p>
+          <p class="ws-hero-story__summary">{{ 'ws_home_story.summary' | t }}</p>
+          <span class="ws-hero-story__action">{{ 'ws_home_story.read_story' | t }} <span aria-hidden="true">&rarr;</span></span>
+        </div>
+      </a>
+    {% endif %}
   </div>
 </section>
 
@@ -43,6 +60,12 @@
     ]
   },
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_featured_story",
+      "label": "Show Nathan's featured story",
+      "default": true
+    },
     {
       "type": "image_picker",
       "id": "image",
