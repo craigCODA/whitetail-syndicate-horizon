@@ -8,6 +8,20 @@
  * ------------------------------------------------------------
  */
 {
+  "ws_shop_all": {
+    "title": "Shop All Gear",
+    "eyebrow": "Whitetail Syndicate / The Store",
+    "description": "Explore all Whitetail Syndicate apparel, hats, and gear.",
+    "image_alt": "Misty woodland at sunrise with a whitetail deer",
+    "collections_label": "Shop collections",
+    "all_gear": "All Gear",
+    "buck": "Buck",
+    "doe": "Doe",
+    "yearling": "Yearling",
+    "fawn": "Fawn",
+    "hats": "Hats & Beanies",
+    "gear": "Gear & Accessories"
+  },
   "ws_home_story": {
     "featured": "Featured story",
     "author": "Nathan Deville",

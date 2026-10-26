@@ -46,6 +46,10 @@
   endcase
 %}
 
+{% if is_full_catalog and section.settings.show_artwork %}
+  {% comment %}Teaching script: the approved banner is limited to Shop All; category intros use the existing markup below.{% endcomment %}
+  {% render 'ws-shop-all-banner' %}
+{% else %}
 <section class="ws-collection-hero{% if is_full_catalog %} ws-collection-hero--all{% endif %}" aria-labelledby="ws-collection-title" {{ section.shopify_attributes }}>
   {% if artwork_url != blank and section.settings.show_artwork %}
     <div
@@ -88,6 +92,7 @@
     {% endif %}
   </div>
 </section>
+{% endif %}
 
 {% schema %}
 {

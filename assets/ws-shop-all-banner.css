@@ -1,0 +1,21 @@
+/* Teaching script: these rules target this section only. The original
+   announcement bar, logo, menu, filter toolbar and product grid are retained. */
+.ws-shop-all-banner { position:relative; background:#0d0c0a; width:100%; }
+.ws-shop-all-banner__image { display:block; width:100%; height:auto; }
+.ws-shop-all-banner__mobile-copy { position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); }
+.ws-shop-all-banner__collections { position:absolute; inset:83.6% 0 0; }
+.ws-shop-all-banner__collections a { position:absolute; top:8%; bottom:12%; left:var(--link-left); width:var(--link-width); border-radius:0; }
+.ws-shop-all-banner__collections a span { position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); }
+.ws-shop-all-banner__collections a:focus-visible { outline:2px solid #d7b56f; outline-offset:2px; }
+@media(max-width:749px) {
+  .ws-shop-all-banner__art { position:relative; height:310px; overflow:hidden; }
+  .ws-shop-all-banner__image { position:absolute; right:0; top:-140px; width:2172px; height:724px; max-width:none; opacity:.55; }
+  .ws-shop-all-banner__mobile-copy { position:absolute; inset:auto 24px 30px; width:auto; height:auto; overflow:visible; clip-path:none; color:#f1e8d4; }
+  .ws-shop-all-banner__mobile-copy p:first-child { font-size:10px; letter-spacing:.18em; text-transform:uppercase; color:#d3b37c; margin:0 0 13px; }
+  .ws-shop-all-banner__mobile-copy h1 { font-family:Georgia,serif; font-size:38px; font-weight:800; text-transform:uppercase; letter-spacing:0; line-height:1.06; margin:0 0 12px; color:inherit; }
+  .ws-shop-all-banner__mobile-copy p:last-child { font-size:14px; line-height:1.6; margin:0; max-width:34ch; color:inherit; }
+  .ws-shop-all-banner__collections { position:relative; inset:auto; display:flex; overflow-x:auto; gap:24px; padding:16px 24px; white-space:nowrap; border-bottom:1px solid #39342b; }
+  .ws-shop-all-banner__collections a { position:relative; inset:auto; width:auto; flex:0 0 auto; color:#e5dfd0; font-size:14px; text-decoration:none; padding:3px 0 7px; }
+  .ws-shop-all-banner__collections a span { position:static; width:auto; height:auto; overflow:visible; clip-path:none; }
+  .ws-shop-all-banner__collections a[aria-current] { color:#d7b56f; border-bottom:2px solid #d7b56f; }
+}

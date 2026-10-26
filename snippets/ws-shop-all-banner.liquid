@@ -1,0 +1,38 @@
+{% doc %}
+  Renders the approved Shop All landscape banner and collection links.
+  Teaching script: this snippet is called only for the full catalog, leaving
+  the shared site header and individual collection artwork in their original files.
+  @example
+  {% render 'ws-shop-all-banner' %}
+{% enddoc %}
+
+{{ 'ws-shop-all-banner.css' | asset_url | stylesheet_tag }}
+
+<section class="ws-shop-all-banner" aria-labelledby="ws-collection-title">
+  <div class="ws-shop-all-banner__art">
+    <img
+      class="ws-shop-all-banner__image"
+      src="{{ 'ws-shop-all-option-2.webp' | asset_url }}"
+      alt="{{ 'ws_shop_all.image_alt' | t | escape }}"
+      width="2172"
+      height="724"
+      loading="eager"
+      decoding="async"
+      fetchpriority="high"
+    >
+    <div class="ws-shop-all-banner__mobile-copy">
+      <p>{{ 'ws_shop_all.eyebrow' | t }}</p>
+      <h1 id="ws-collection-title">{{ 'ws_shop_all.title' | t }}</h1>
+      <p>{{ 'ws_shop_all.description' | t }}</p>
+    </div>
+  </div>
+  <nav class="ws-shop-all-banner__collections" aria-label="{{ 'ws_shop_all.collections_label' | t | escape }}">
+    <a href="{{ routes.all_products_collection_url }}" aria-current="page" style="--link-left:20.2%;--link-width:7%"><span>{{ 'ws_shop_all.all_gear' | t }}</span></a>
+    <a href="{{ collections['the-buck-collection'].url }}" style="--link-left:28.6%;--link-width:5%"><span>{{ 'ws_shop_all.buck' | t }}</span></a>
+    <a href="{{ collections['the-doe-collection'].url }}" style="--link-left:34.7%;--link-width:4.8%"><span>{{ 'ws_shop_all.doe' | t }}</span></a>
+    <a href="{{ collections['the-yearling-collection'].url }}" style="--link-left:40.4%;--link-width:6.7%"><span>{{ 'ws_shop_all.yearling' | t }}</span></a>
+    <a href="{{ collections['the-fawn-collection'].url }}" style="--link-left:48.8%;--link-width:5%"><span>{{ 'ws_shop_all.fawn' | t }}</span></a>
+    <a href="{{ collections['hats-beanies'].url }}" style="--link-left:55.4%;--link-width:11.1%"><span>{{ 'ws_shop_all.hats' | t }}</span></a>
+    <a href="{{ collections['gear-accessories'].url }}" style="--link-left:68.4%;--link-width:12.7%"><span>{{ 'ws_shop_all.gear' | t }}</span></a>
+  </nav>
+</section>
